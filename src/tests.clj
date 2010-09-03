@@ -45,21 +45,19 @@
 (defn- assert-txt-parses-to-xml [txt-file xml-file]
   (let [expected-xml (slurp xml-file)
         actual-xml (to-xml (parse-file txt-file))]
-    (print expected-xml)
-    (print actual-xml)
+    (println (str "Expected: " expected-xml))
+    (println (str "Actual: " actual-xml))
     (assert-doms-equal expected-xml actual-xml)))
 
 (defn acceptance-test []
   (let [txts (map txt-resource example-files)
         xmls (map xml-resource example-files)]
-    (print (count xmls))
     (doseq [pair (zip txts xmls)]
       (assert-txt-parses-to-xml (first pair) (second pair)))))
 
 (acceptance-test)
 
 (is (= (parse "") (make-node :body)))
-
 ;
 ;(def child1 0)
 ;(def child2 0)
