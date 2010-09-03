@@ -8,6 +8,5 @@
   (make-node :body))
 
 (defn parse-file [f]
-  (let [path (resource f)
-        file-contents (read-file path)]
+  (let [file-contents (slurp f)]
     (parse file-contents)))

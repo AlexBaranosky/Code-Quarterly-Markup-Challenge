@@ -17,11 +17,11 @@
       (.setShowWarnings false)
       (.setQuiet true))))
 
-(defn parse-dom [xml]
-  (let [input-stream (ByteArrayInputStream. (.getBytes xml))]
+(defn- parse-dom [xml-string]
+  (let [input-stream (ByteArrayInputStream. (.getBytes xml-string))]
     (.parseDOM *tidy* input-stream nil)))
 
-(defn generate-diff [control test]
+(defn- generate-diff [control test]
   (let [control-dom (parse-dom control)
         test-dom (parse-dom test)]
     (XMLUnit/compareXML control-dom test-dom)))

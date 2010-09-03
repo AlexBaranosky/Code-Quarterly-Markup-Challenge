@@ -1,4 +1,4 @@
-(ns node-tests
+(ns tests
   (:use clojure.test)
   (:use doms)
   (:use markupparsing)
@@ -42,22 +42,29 @@
                     "33_escapes_not_needed"
                     "34_modeline"])
 
-(defn assert-txt-parses-to-xml [txt-file xml-file]
-  (let [expected-xml (read-file xml-file)
+(defn- assert-txt-parses-to-xml [txt-file xml-file]
+  (let [expected-xml (slurp xml-file)
         actual-xml (to-xml (parse-file txt-file))]
+    (print expected-xml)
+    (print actual-xml)
     (assert-doms-equal expected-xml actual-xml)))
 
 (defn acceptance-test []
-  (let [txts (txt example-files)
-        xmls (xml example-files)]
+  (let [txts (map txt-resource example-files)
+        xmls (map xml-resource example-files)]
+    (print (count xmls))
     (doseq [pair (zip txts xmls)]
       (assert-txt-parses-to-xml (first pair) (second pair)))))
+
+(acceptance-test)
+
+(is (= (parse "") (make-node :body)))
+
 ;
 ;(def child1 0)
 ;(def child2 0)
 ;(is (= (make-node :div child1 child2) (struct node :div [child1 child2])))
 ;
 ;(is (= (parse-file (txt "01_empty")) (make-node :body)))
-;(is (= (parse "") (make-node :body)))
 ;
 ;(is (= (parse "This is a simple paragraph.") (make-node :body (make-node :p (make-node :text "This is a simple paragraph.")))))
