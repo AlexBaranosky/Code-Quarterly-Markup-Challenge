@@ -1,9 +1,8 @@
-(ns doms
+(ns dom
   (:import (java.io InputStream ByteArrayInputStream))
   (:import (org.w3c.tidy Tidy))
   (:import (org.custommonkey.xmlunit XMLUnit))
   (:import (junit.framework Assert)))
-
 
 (defn configure-xml-unit []
   (XMLUnit/setIgnoreAttributeOrder true)
