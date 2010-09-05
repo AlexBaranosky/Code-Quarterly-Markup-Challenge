@@ -23,6 +23,3 @@
 (assert-doms-identical link-name-href-w-br link-name-href-w-whitespace)
 (assert-doms-not-identical link-name-href-class link-name-href)
 (assert-doms-not-identical link-name-href-w-br link-name-href-w-whitespace-inside-word)
-
-(fact
-  )
