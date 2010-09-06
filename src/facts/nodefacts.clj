@@ -20,4 +20,14 @@
   (p ...children...) => (make-node :p ...children...))
 
 (fact
+  (h 44 ...children...) => (make-node :h44 ...children...))
+
+(fact
   (h1 ...children...) => (make-node :h1 ...children...))
+
+(fact
+  (h2 ...children...) => (make-node :h2 ...children...))
+
+(fact
+  (h3 ...children...) => (make-node :h3 ...children...))
+
