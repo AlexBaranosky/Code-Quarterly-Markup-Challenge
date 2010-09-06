@@ -1,13 +1,15 @@
 (ns markupparsing
   (:use node)
-  (:use common.string)
-  (:import (java.io BufferedReader FileReader)))
+  (:use common.string))
 
 (defn parse [s]
   (let [children
         (cond
           (blank? s)
           nil
+
+          (.startsWith s "* ")
+          (h1 (.substring s 2))
 
           :else
           (let [lines (split-non-blank-chunks s)]

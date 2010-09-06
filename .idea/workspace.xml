@@ -63,7 +63,7 @@
       <file leaf-file-name="markupparsingfacts.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/facts/markupparsingfacts.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="9" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+            <state line="19" column="10" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -72,7 +72,25 @@
       <file leaf-file-name="markupparsing.clj" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/markupparsing.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="0.5347092">
+            <state line="11" column="28" selection-start="199" selection-end="199" vertical-scroll-proportion="0.39212006">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="String.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_17/src.zip!/java/lang/String.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1902" column="18" selection-start="72668" selection-end="72668" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="string.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/string.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="6" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,24 +150,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xmltransformation.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xmltransformation.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="4" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/utils.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="52" selection-start="507" selection-end="507" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -168,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/facts/commonstringfacts.clj" />
         <option value="$PROJECT_DIR$/src/facts/acceptancetest.clj" />
         <option value="$PROJECT_DIR$/src/facts/domtests.clj" />
-        <option value="$PROJECT_DIR$/src/markupparsing.clj" />
         <option value="$PROJECT_DIR$/src/facts/commonutilsfacts.clj" />
         <option value="$PROJECT_DIR$/src/common/utils.clj" />
         <option value="$PROJECT_DIR$/src/xmltransformation.clj" />
@@ -176,6 +175,7 @@
         <option value="$PROJECT_DIR$/src/facts/markupparsingfacts.clj" />
         <option value="$PROJECT_DIR$/src/node.clj" />
         <option value="$PROJECT_DIR$/src/facts/nodefacts.clj" />
+        <option value="$PROJECT_DIR$/src/markupparsing.clj" />
       </list>
     </option>
   </component>
@@ -314,17 +314,6 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Clojure Script.markupparsingfacts">
-    <configuration default="false" name="acceptancetest" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="CodeChallengeMarkup" />
-      <setting name="path" value="$PROJECT_DIR$/src/facts/acceptancetest.clj" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src/facts" />
-      <setting name="repl" value="false" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="domtests" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="CodeChallengeMarkup" />
       <setting name="path" value="$PROJECT_DIR$/src/facts/domtests.clj" />
@@ -364,6 +353,17 @@
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workDir" value="$PROJECT_DIR$/src/facts" />
+      <setting name="repl" value="false" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="markupparsing" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="CodeChallengeMarkup" />
+      <setting name="path" value="$PROJECT_DIR$/src/markupparsing.clj" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/src" />
       <setting name="repl" value="false" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -517,11 +517,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Clojure Script.acceptancetest" />
-      <item index="1" class="java.lang.String" itemvalue="Clojure Script.domtests" />
-      <item index="2" class="java.lang.String" itemvalue="Clojure Script.markupparsingfacts" />
-      <item index="3" class="java.lang.String" itemvalue="Clojure Script.nodefacts" />
-      <item index="4" class="java.lang.String" itemvalue="Clojure Script.xmltransformationfacts" />
+      <item index="0" class="java.lang.String" itemvalue="Clojure Script.domtests" />
+      <item index="1" class="java.lang.String" itemvalue="Clojure Script.markupparsingfacts" />
+      <item index="2" class="java.lang.String" itemvalue="Clojure Script.nodefacts" />
+      <item index="3" class="java.lang.String" itemvalue="Clojure Script.xmltransformationfacts" />
+      <item index="4" class="java.lang.String" itemvalue="Clojure Script.markupparsing" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -602,20 +602,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/xml.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="6" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/facts/dom.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="80" selection-start="438" selection-end="438" vertical-scroll-proportion="0.44186047">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/facts/domtests.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="0" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0">
@@ -700,16 +686,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/string.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="6" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_17/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1902" column="18" selection-start="72668" selection-end="72668" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/facts/markupparsingfacts.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="9" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+        <state line="19" column="10" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/markupparsing.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="0.5347092">
+        <state line="11" column="28" selection-start="199" selection-end="199" vertical-scroll-proportion="0.39212006">
           <folding />
         </state>
       </provider>
