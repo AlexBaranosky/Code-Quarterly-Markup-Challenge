@@ -6,6 +6,64 @@
   (:use xmltransformation)
   (:use xml))
 
+;;; common.clj
+
+(fact
+  (blank? "") => true)
+
+(fact
+  (blank? "                           ") => true)
+
+(fact
+  (blank? "
+
+  ") => true)
+
+(fact
+  (blank? " goat ") => false)
+
+(fact
+  (blank? "
+  goat
+
+     ") => false)
+
+(fact
+  (parse "") => (make-node :body nil))
+
+(fact
+  (split-non-blank-chunks "groom-self  abc
+  def
+
+  ghi
+
+  paula balla") => ["groom-self  abc
+  def" "ghi" "paula balla"])
+
+(fact
+  (split-non-blank-chunks "123
+
+  abc") => ["123" "abc"])
+
+(fact
+  (multi-line? "") => false)
+
+(fact
+  (multi-line? " 123 abc") => false)
+
+(fact
+  (multi-line? " 123
+  abc") => false)
+
+(fact
+  (multi-line? "123
+
+  abc") => true)
+
+;;; markupparsing.clj
+
+
+
 ;;; xml.clj
 
 (fact
@@ -28,6 +86,21 @@
       (make-node :p "This is a simple paragraph.")))
   =>
   "<body><p>This is a simple paragraph.</p></body>")
+
+(def two-paragraphs
+  (list (make-node :p "This is paragraph number one.") (make-node :p "This is paragraph number two.")))
+
+(fact
+  (parse "This is paragraph number one.
+
+This is paragraph number two.")
+  =>
+  (make-node :body two-paragraphs))
+
+(fact
+  (to-xml two-paragraphs)
+  =>
+  "<body><p>This is paragraph number one.</p><p>This is paragraph number two.</p></body>")
 
 ;;; node.clj
 
