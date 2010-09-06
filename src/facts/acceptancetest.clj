@@ -4,7 +4,7 @@
   (:use markupparsing)
   (:use node)
   (:use xmltransformation)
-  (:use common))
+  (:use common.utils))
 
 (def example-files ["01_empty"
                     "02_simple_paragraph"

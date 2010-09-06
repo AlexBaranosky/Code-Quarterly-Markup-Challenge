@@ -1,6 +1,6 @@
 (ns markupparsing
   (:use node)
-  (:use common)
+  (:use common.string)
   (:import (java.io BufferedReader FileReader)))
 
 (defn parse [s]

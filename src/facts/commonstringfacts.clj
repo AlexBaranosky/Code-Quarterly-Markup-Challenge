@@ -1,5 +1,5 @@
-(ns facts.commonfacts
-  (:use common)
+(ns facts.commonstringfacts
+  (:use common.string)
   (:use midje.sweet))
 
 (fact (blank? "") => true)
@@ -42,4 +42,3 @@
 (fact (multi-line? "123
 
   abc") => true)
-
