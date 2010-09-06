@@ -1,4 +1,4 @@
-(ns dom
+(ns facts.dom
   (:import (java.io InputStream ByteArrayInputStream))
   (:import (org.w3c.tidy Tidy))
   (:import (org.custommonkey.xmlunit XMLUnit))

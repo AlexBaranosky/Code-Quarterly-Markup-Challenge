@@ -60,19 +60,64 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="markupparsing.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/markupparsing.clj">
+      <file leaf-file-name="nodefacts.clj" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/facts/nodefacts.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="34" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
+            <state line="13" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="0.51890755">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facts.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/facts.clj">
+      <file leaf-file-name="markupparsingfacts.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/facts/markupparsingfacts.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="8" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0">
+            <state line="12" column="10" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xmltransformationfacts.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/facts/xmltransformationfacts.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="91" selection-start="262" selection-end="458" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xmlfacts.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/facts/xmlfacts.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="20" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commonfacts.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/facts/commonfacts.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="7" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="domtests.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/facts/domtests.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="14" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dom.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/facts/dom.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -81,43 +126,16 @@
       <file leaf-file-name="node.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/node.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="29" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.clj" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/common.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="24" selection-start="516" selection-end="516" vertical-scroll-proportion="0.6407563">
+            <state line="15" column="36" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="acceptancetest.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/acceptancetest.clj">
+        <entry file="file://$PROJECT_DIR$/src/facts/acceptancetest.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="56" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="xmltransformation.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xmltransformation.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="xml.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xml.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="6" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
+            <state line="11" column="47" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -133,22 +151,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/markup-parsing.clj" />
-        <option value="$PROJECT_DIR$/src/node-tests.clj" />
-        <option value="$PROJECT_DIR$/src/tests.clj" />
-        <option value="$PROJECT_DIR$/src/acceptance-test.clj" />
-        <option value="$PROJECT_DIR$/src/doms.clj" />
-        <option value="$PROJECT_DIR$/src/domtests.clj" />
-        <option value="$PROJECT_DIR$/src/dom.clj" />
-        <option value="$PROJECT_DIR$/src/file.clj" />
-        <option value="$PROJECT_DIR$/src/fnparse/fnparse.clj" />
         <option value="$PROJECT_DIR$/src/xml.clj" />
         <option value="$PROJECT_DIR$/src/acceptancetest.clj" />
         <option value="$PROJECT_DIR$/src/markupparsing.clj" />
         <option value="$PROJECT_DIR$/src/xmltransformation.clj" />
-        <option value="$PROJECT_DIR$/src/node.clj" />
         <option value="$PROJECT_DIR$/src/facts.clj" />
         <option value="$PROJECT_DIR$/src/common.clj" />
+        <option value="$PROJECT_DIR$/src/facts/domtests.clj" />
+        <option value="$PROJECT_DIR$/src/facts/dom.clj" />
+        <option value="$PROJECT_DIR$/src/facts/acceptancetest.clj" />
+        <option value="$PROJECT_DIR$/src/facts/commonfacts.clj" />
+        <option value="$PROJECT_DIR$/src/facts/xmlfacts.clj" />
+        <option value="$PROJECT_DIR$/src/node.clj" />
+        <option value="$PROJECT_DIR$/src/facts/xmltransformationfacts.clj" />
+        <option value="$PROJECT_DIR$/src/facts/nodefacts.clj" />
+        <option value="$PROJECT_DIR$/src/facts/facts.clj" />
+        <option value="$PROJECT_DIR$/src/facts/markupparsingfacts.clj" />
       </list>
     </option>
   </component>
@@ -229,6 +247,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeChallengeMarkup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeChallengeMarkup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="facts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -250,57 +286,57 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="Clojure Script.facts">
-    <configuration default="false" name="node-tests" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+  <component name="RunManager" selected="Clojure Script.markupparsingfacts">
+    <configuration default="false" name="commonfacts" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="CodeChallengeMarkup" />
-      <setting name="path" value="$PROJECT_DIR$/src/node-tests.clj" />
+      <setting name="path" value="$PROJECT_DIR$/src/facts/commonfacts.clj" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/facts" />
       <setting name="repl" value="false" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="facts" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+    <configuration default="false" name="xmlfacts" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="CodeChallengeMarkup" />
-      <setting name="path" value="$PROJECT_DIR$/src/facts.clj" />
+      <setting name="path" value="$PROJECT_DIR$/src/facts/xmlfacts.clj" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/facts" />
       <setting name="repl" value="false" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="tests" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+    <configuration default="false" name="xmltransformationfacts" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="CodeChallengeMarkup" />
-      <setting name="path" value="$PROJECT_DIR$/src/tests.clj" />
+      <setting name="path" value="$PROJECT_DIR$/src/facts/xmltransformationfacts.clj" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/facts" />
       <setting name="repl" value="false" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="domtests" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+    <configuration default="false" name="markupparsingfacts" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="CodeChallengeMarkup" />
-      <setting name="path" value="$PROJECT_DIR$/src/domtests.clj" />
+      <setting name="path" value="$PROJECT_DIR$/src/facts/markupparsingfacts.clj" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/facts" />
       <setting name="repl" value="false" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="acceptancetest" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+    <configuration default="false" name="nodefacts" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="CodeChallengeMarkup" />
-      <setting name="path" value="$PROJECT_DIR$/src/acceptancetest.clj" />
+      <setting name="path" value="$PROJECT_DIR$/src/facts/nodefacts.clj" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/facts" />
       <setting name="repl" value="false" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -454,11 +490,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Clojure Script.node-tests" />
-      <item index="1" class="java.lang.String" itemvalue="Clojure Script.facts" />
-      <item index="2" class="java.lang.String" itemvalue="Clojure Script.tests" />
-      <item index="3" class="java.lang.String" itemvalue="Clojure Script.domtests" />
-      <item index="4" class="java.lang.String" itemvalue="Clojure Script.acceptancetest" />
+      <item index="0" class="java.lang.String" itemvalue="Clojure Script.commonfacts" />
+      <item index="1" class="java.lang.String" itemvalue="Clojure Script.xmlfacts" />
+      <item index="2" class="java.lang.String" itemvalue="Clojure Script.xmltransformationfacts" />
+      <item index="3" class="java.lang.String" itemvalue="Clojure Script.markupparsingfacts" />
+      <item index="4" class="java.lang.String" itemvalue="Clojure Script.nodefacts" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -484,7 +520,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="11" y="10" width="1659" height="1010" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -497,7 +533,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24984306" sideWeight="0.59294116" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24984306" sideWeight="0.59294116" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39882353" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -539,55 +575,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/09_headers_and_paragraphs.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/21_multiparagraph_list_items.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/22_nested_lists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/02_simple_paragraph.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dom.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domtests.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_17/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2332" column="20" selection-start="89467" selection-end="89467" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/04_two_paragraphs.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="60" vertical-scroll-proportion="0.0">
@@ -623,30 +610,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/node.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="29" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/acceptancetest.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="56" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/facts.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="8" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="24" selection-start="516" selection-end="516" vertical-scroll-proportion="0.6407563">
+        <state line="24" column="0" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts/domtests.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="14" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts/dom.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts/commonfacts.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="7" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/node.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="36" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts/xmlfacts.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="20" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts/acceptancetest.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="47" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts/xmltransformationfacts.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="91" selection-start="262" selection-end="458" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts/markupparsingfacts.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="10" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts/nodefacts.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="0.51890755">
           <folding />
         </state>
       </provider>

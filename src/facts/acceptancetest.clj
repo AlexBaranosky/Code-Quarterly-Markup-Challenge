@@ -1,6 +1,6 @@
 (ns acceptancetest
   (:use clojure.test)
-  (:use dom)
+  (:use facts.dom)
   (:use markupparsing)
   (:use node)
   (:use xmltransformation)

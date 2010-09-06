@@ -1,5 +1,5 @@
 (ns domtests
-  (:use dom)
+  (:use facts.dom)
   (:import (junit.framework Assert)))
 
 (def link-href-name "<a href=\"aaa\" name=\"nnn\">CONTENT</a>")
