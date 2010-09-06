@@ -32,10 +32,10 @@
   (parse "") => (make-node :body nil))
 
 (fact
-  (split-non-blank-chunks "groom-self  abc
+  (split-non-blank-chunks "   groom-self  abc
   def
 
-  ghi
+  ghi   
 
   paula balla") => ["groom-self  abc
   def" "ghi" "paula balla"])

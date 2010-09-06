@@ -72,7 +72,7 @@
       <file leaf-file-name="facts.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/facts.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="17" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0">
+            <state line="37" column="8" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -87,19 +87,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.clj" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="common.clj" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/common.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="52" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0">
+            <state line="21" column="24" selection-start="516" selection-end="516" vertical-scroll-proportion="0.6407563">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="acceptancetest.clj" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="acceptancetest.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/acceptancetest.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="50" selection-start="1537" selection-end="1537" vertical-scroll-proportion="-0.024498885">
+            <state line="50" column="56" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,12 +143,12 @@
         <option value="$PROJECT_DIR$/src/file.clj" />
         <option value="$PROJECT_DIR$/src/fnparse/fnparse.clj" />
         <option value="$PROJECT_DIR$/src/xml.clj" />
-        <option value="$PROJECT_DIR$/src/common.clj" />
         <option value="$PROJECT_DIR$/src/acceptancetest.clj" />
         <option value="$PROJECT_DIR$/src/markupparsing.clj" />
         <option value="$PROJECT_DIR$/src/xmltransformation.clj" />
         <option value="$PROJECT_DIR$/src/node.clj" />
         <option value="$PROJECT_DIR$/src/facts.clj" />
+        <option value="$PROJECT_DIR$/src/common.clj" />
       </list>
     </option>
   </component>
@@ -488,7 +488,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4635294" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -497,9 +497,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24984306" sideWeight="0.5611765" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24984306" sideWeight="0.59294116" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43058825" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39882353" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -602,13 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="52" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/markupparsing.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="34" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
@@ -630,13 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/facts.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="17" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/node.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="29" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
@@ -646,7 +632,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/acceptancetest.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="50" selection-start="1537" selection-end="1537" vertical-scroll-proportion="-0.024498885">
+        <state line="50" column="56" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="8" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="24" selection-start="516" selection-end="516" vertical-scroll-proportion="0.6407563">
           <folding />
         </state>
       </provider>

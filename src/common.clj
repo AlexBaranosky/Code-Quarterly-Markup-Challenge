@@ -19,7 +19,7 @@
   (nil? (re-find #"\S" s)))
 
 (defn split-non-blank-chunks [s]
-  (split (.trim s) #"\n\s*\n\s*"))
+  (split (.trim s) #"\s*\n\s*\n\s*"))
 
 (defn multi-line? [s]
   (< 1 (count (split-non-blank-chunks s))))
