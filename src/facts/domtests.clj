@@ -2,7 +2,8 @@
   (:use facts.dom)
   (:import (junit.framework Assert)))
 
-(def link-href-name "<a href=\"aaa\" name=\"nnn\">CONTENT</a>")
+(def link-href-name "<a href=\"aaa\" name=\"nnn\">CONTENT
+</a>")
 (def link-name-href "<a name=\"nnn\" href=\"aaa\">CONTENT</a>")
 (def link-name-href-w-br "<a name=\"nnn\" href=\"aaa\">CONTENT</a><br>")
 (def link-name-href-w-whitespace "            <a name=\"nnn     \" href=\"aaa\">        \r\n\t       CONTENT</a>     <br>")

@@ -47,8 +47,8 @@
         actual-xml (to-xml (parse markup))]
     (println (str "** " txt-file " **"))
     (println (str "Parsing:\n" markup))
-    (print (str "Expected:\n" expected-xml))
-    (println (str "Actual:\n" actual-xml "\n"))
+    (print (str "Expected:\n'" expected-xml "'"))
+    (println (str "Actual:\n'" actual-xml "'\n"))
     (assert-doms-equal expected-xml actual-xml)))
 
 (defn acceptance-test []

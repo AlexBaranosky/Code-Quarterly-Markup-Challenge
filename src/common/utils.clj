@@ -12,3 +12,8 @@
 
 (def zip
   (partial map list))
+
+(defn only [seq]
+  (if (= 1 count)
+    (first seq)
+    (throw "sequence must have exactly one element")))

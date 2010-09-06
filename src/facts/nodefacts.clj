@@ -7,7 +7,17 @@
   (struct node :body [...child1... ...child2...]))
 
 (fact
-  (p ...children...) => (make-node :p ...children...))
+  (make-node :body ...child...) =>
+  (struct node :body [...child...]))
+
+(fact
+  (make-node :body nil) => (struct node :body nil))
 
 (fact
   (body ...children...) => (make-node :body ...children...))
+
+(fact
+  (p ...children...) => (make-node :p ...children...))
+
+(fact
+  (h1 ...children...) => (make-node :h1 ...children...))
