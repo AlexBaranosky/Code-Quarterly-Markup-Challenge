@@ -12,5 +12,5 @@
             (let [lines (split-non-blank-chunks s)]
               (println (str "lines: " lines))
               (map #(make-node :p %) lines))
-            (make-node :p s)))]
-          (make-node :body children)))
+            (list (make-node :p s))))]
+    (make-node :body children)))

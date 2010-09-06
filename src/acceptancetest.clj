@@ -59,11 +59,3 @@
 
 (acceptance-test)
 
-;"01_empty"
-(is (= (parse "") (make-node :body)))
-
-;02_simple_paragraph
-(is (= (parse "This is a simple paragraph.")
-       (make-node :body
-         (make-node :p
-           (make-node :text "This is a simple paragraph.")))))

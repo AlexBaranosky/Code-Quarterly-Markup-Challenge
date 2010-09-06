@@ -3,10 +3,10 @@
 
 (defn to-xml
   ([node]
-;    (println node)
+    (println node)
     (if (string? node)
       node
       (let [name (name (:name node))
             children (:children node)
-            content (if (= nil children) "" (to-xml children))]
+            content (if (= nil children) "" (reduce str "" (map to-xml children)))]
         (tag name content)))))

@@ -88,14 +88,14 @@
   "<body><p>This is a simple paragraph.</p></body>")
 
 (def two-paragraphs
-  (list (make-node :p "This is paragraph number one.") (make-node :p "This is paragraph number two.")))
+  (make-node :body (list (make-node :p "This is paragraph number one.") (make-node :p "This is paragraph number two."))))
 
 (fact
   (parse "This is paragraph number one.
 
 This is paragraph number two.")
   =>
-  (make-node :body two-paragraphs))
+  two-paragraphs)
 
 (fact
   (to-xml two-paragraphs)
@@ -107,4 +107,15 @@ This is paragraph number two.")
 (fact
   (make-node :div [...child1... ...child2...]) =>
   (struct node :div [...child1... ...child2...]))
+
+
+
+;"01_empty"
+(fact
+  (parse "") => (make-node :body))
+
+;02_simple_paragraph
+(fact (parse "This is a simple paragraph.") =>
+       (make-node :body
+         (list  (make-node :p "This is a simple paragraph."))))
 
