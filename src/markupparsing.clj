@@ -6,11 +6,15 @@
 (defn parse [s]
   (println (str "'" s "'"))
   (let [children
-        (if (blank? s)
+        (cond
+          (blank? s)
           nil
-          (if (multi-line? s)
-            (let [lines (split-non-blank-chunks s)]
-              (println (str "lines: " lines))
-              (map #(make-node :p %) lines))
-            (list (make-node :p s))))]
+
+          (multi-line? s)
+          (let [lines (split-non-blank-chunks s)]
+            (println (str "lines: " lines))
+            (map #(make-node :p %) lines))
+
+          :else
+          (list (make-node :p s)))]
     (make-node :body children)))

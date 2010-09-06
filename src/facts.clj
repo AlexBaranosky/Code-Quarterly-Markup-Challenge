@@ -57,6 +57,10 @@
 
 (fact
   (multi-line? "123
+") => false)
+
+(fact
+  (multi-line? "123
 
   abc") => true)
 
@@ -78,17 +82,20 @@
 ;;; xml-transformation.clj
 
 (fact
-  (to-xml (make-node :body nil)) => "<body></body>")
+  (to-xml (body nil)) => "<body/>")
 
 (fact
   (to-xml
-    (make-node :body
-      (make-node :p "This is a simple paragraph.")))
+    (body (p "This is a simple paragraph.")))
   =>
   "<body><p>This is a simple paragraph.</p></body>")
 
+;something to go through and take (keywd x y) and turn it into (make-node :keywd x y) for ANY keywd
+;(defmacro body [forms]
+;  forms)
+
 (def two-paragraphs
-  (make-node :body (list (make-node :p "This is paragraph number one.") (make-node :p "This is paragraph number two."))))
+  (body [(p "This is paragraph number one.") (p "This is paragraph number two.")]))
 
 (fact
   (parse "This is paragraph number one.
@@ -96,26 +103,24 @@
 This is paragraph number two.")
   =>
   two-paragraphs)
-
-(fact
-  (to-xml two-paragraphs)
-  =>
-  "<body><p>This is paragraph number one.</p><p>This is paragraph number two.</p></body>")
+;
+;(fact
+;  (to-xml two-paragraphs)
+;  =>
+;  "<body><p>This is paragraph number one.</p><p>This is paragraph number two.</p></body>")
 
 ;;; node.clj
 
 (fact
-  (make-node :div [...child1... ...child2...]) =>
-  (struct node :div [...child1... ...child2...]))
-
+  (make-node :body [...child1... ...child2...]) =>
+  (struct node :body [...child1... ...child2...]))
 
 
 ;"01_empty"
 (fact
-  (parse "") => (make-node :body))
+  (parse "") => (body nil))
 
 ;02_simple_paragraph
 (fact (parse "This is a simple paragraph.") =>
-       (make-node :body
-         (list  (make-node :p "This is a simple paragraph."))))
+       (body [(p "This is a simple paragraph.")]))
 

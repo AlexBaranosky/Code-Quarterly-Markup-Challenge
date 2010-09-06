@@ -4,9 +4,13 @@
 (defn to-xml
   ([node]
     (println node)
-    (if (string? node)
+    (cond
+      (string? node)
       node
+      :else
       (let [name (name (:name node))
             children (:children node)
-            content (if (= nil children) "" (reduce str "" (map to-xml children)))]
-        (tag name content)))))
+            tagfn (partial tag name)]
+        (if (= nil children)
+          (tagfn nil)
+          (tagfn (to-xml children))))))) 
