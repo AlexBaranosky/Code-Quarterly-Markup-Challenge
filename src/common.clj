@@ -9,5 +9,5 @@
 (defn xml-resource [file-sans-extension]
   (resource (str file-sans-extension ".xml")))
 
-(defn zip [c1 c2]
-  (map list c1 c2))
+(def zip
+  (partial map list))

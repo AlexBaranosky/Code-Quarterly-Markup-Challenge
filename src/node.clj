@@ -1,6 +1,6 @@
 (ns node)
 
-(defstruct node :node-type :children)
+(defstruct node :name :children)
 
 (def make-node
   (partial struct node))

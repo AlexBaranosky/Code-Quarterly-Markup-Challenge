@@ -43,25 +43,27 @@
 
 (defn- assert-txt-parses-to-xml [txt-file xml-file]
   (let [expected-xml (slurp xml-file)
-        actual-xml (to-xml (parse-file txt-file))]
-    (println (str "Expected: " expected-xml))
-    (println (str "Actual: " actual-xml))
+        markup (slurp txt-file)
+        actual-xml (to-xml (parse markup))]
+    (println (str "** " txt-file " **"))
+    (println (str "Parsing: " markup))
+    (print (str "Expected: " expected-xml))
+    (println (str "Actual:   " actual-xml "\n"))
     (assert-doms-equal expected-xml actual-xml)))
 
 (defn acceptance-test []
   (let [txts (map txt-resource example-files)
         xmls (map xml-resource example-files)]
-    (doseq [pair (zip txts xmls)]
-      (assert-txt-parses-to-xml (first pair) (second pair)))))
+    (doseq [txt-w-xml (zip txts xmls)]
+      (assert-txt-parses-to-xml (first txt-w-xml) (second txt-w-xml)))))
 
 (acceptance-test)
 
+;"01_empty"
 (is (= (parse "") (make-node :body)))
-;
-;(def child1 0)
-;(def child2 0)
-;(is (= (make-node :div child1 child2) (struct node :div [child1 child2])))
-;
-;(is (= (parse-file (txt "01_empty")) (make-node :body)))
-;
-;(is (= (parse "This is a simple paragraph.") (make-node :body (make-node :p (make-node :text "This is a simple paragraph.")))))
+
+;02_simple_paragraph
+(is (= (parse "This is a simple paragraph.")
+       (make-node :body
+         (make-node :p
+           (make-node :text "This is a simple paragraph.")))))

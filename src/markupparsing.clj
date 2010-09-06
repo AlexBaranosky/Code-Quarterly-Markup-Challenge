@@ -1,11 +1,10 @@
 (ns markupparsing
   (:use node)
   (:use common)
+  (:use fnparse.fnparse)
   (:import (java.io BufferedReader FileReader)))
 
 (defn parse [s]
-  (make-node :body))
-
-(defn parse-file [f]
-  (let [file-contents (slurp f)]
-    (parse file-contents)))
+  (if (= s "")
+    (make-node :body)
+    (make-node :body (make-node :p s))))
