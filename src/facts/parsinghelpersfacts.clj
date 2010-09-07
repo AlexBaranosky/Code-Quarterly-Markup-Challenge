@@ -30,3 +30,7 @@
 
 (fact (blockquote? "  blockquote!") => true)
 (fact (blockquote? "not") => false)
+
+(fact (strip-leading-whitespace "  ABC") => "ABC")
+(fact (strip-leading-whitespace "  ABC
+  EFG") => "ABC EFG")

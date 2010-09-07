@@ -17,7 +17,7 @@
                     "09_headers_and_paragraphs"
                     "10_blockquote"
                     "11_multiline_blockquote"
-                    "12_multiparagraph_blockquote"
+                    "12_multi_paragraph_blockquote"
                     "13_paragraphs_and_blockquotes"
                     "14_simple_verbatim"
                     "15_useful_verbatim"
