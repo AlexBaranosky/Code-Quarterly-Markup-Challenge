@@ -14,7 +14,7 @@
 
 This is paragraph number two.")
   =>
-   (body [(p "This is paragraph number one.") (p "This is paragraph number two.")]))
+  (body [(p "This is paragraph number one.") (p "This is paragraph number two.")]))
 
 ;06_header
 (fact (parse "* This is a top level header") => (body (h1 "This is a top level header")))
@@ -45,3 +45,12 @@ paragraph 2")
 ;11_multiple_blockquotes
 (fact (parse "  This is a blockquote paragraph
   that spans multiple lines") => (body [(blockquote (p "This is a blockquote paragraph that spans multiple lines"))]))
+
+;12_multiple_paragraph_blockquote
+(fact (parse "  blockquote
+
+  second
+
+  third")
+  =>
+  (body (blockquote [(p "blockquote") (p "second") (p "third")])))

@@ -14,6 +14,6 @@
 (defn blockquote? [s]
   ( > (count (re-find #"^  " s)) 0))
 
-(defn strip-leading-whitespace [s]
+(defn trim-n-crunch-whitespace [s]
   (let [trimmed (.trim s)]
     (re-gsub #"\s*\n\s*" " " trimmed)))

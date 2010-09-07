@@ -17,7 +17,7 @@
 ;    (map p sections)))
 
 (defn parse-blockquote [s]
-  (let [content (strip-leading-whitespace s)]
+  (let [content (trim-n-crunch-whitespace s)]
     (blockquote (p content))))
 
 (defn parse-other [s]
