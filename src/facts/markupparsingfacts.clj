@@ -27,3 +27,14 @@ This is paragraph number two.")
 *** This is a tertiary header.")
   =>
   (body [(h1 "This is a primary header.") (h2 "This is a secondary header.") (h3 "This is a tertiary header.")]))
+
+;09_headers_and_paragraphs.txt
+(fact (parse "* Header 1
+
+paragraph 1
+
+** Header 2
+
+paragraph 2")
+  =>
+  (body [(h1 "Header 1") (p "paragraph 1") (h2 "Header 2") (p "paragraph 2")]))

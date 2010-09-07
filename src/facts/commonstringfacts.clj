@@ -17,7 +17,7 @@
 
      ") => false)
 
-(fact (split-non-blank-chunks "   groom-self  abc
+(fact (split-on-blank-lines "   groom-self  abc
   def
 
   ghi
@@ -25,7 +25,7 @@
   paula balla") => ["groom-self  abc
   def" "ghi" "paula balla"])
 
-(fact (split-non-blank-chunks "123
+(fact (split-on-blank-lines "123
 
   abc") => ["123" "abc"])
 

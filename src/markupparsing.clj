@@ -4,17 +4,22 @@
   (:use common.string))
 
 (defn parse-heading [s]
-  (let [heading-level (num-leading-asterisks s)
-        content (.substring s (inc heading-level))]
-    (h heading-level content)))
+  (let [level (heading-level s)
+        content (.substring s (inc level))]
+    (h level content)))
 
 (defn parse-headings [s]
-  (let [lines (split-non-blank-chunks s)]
+  (let [lines (split-on-blank-lines s)]
     (map parse-heading lines)))
 
 (defn parse-paragraphs [s]
-  (let [lines (split-non-blank-chunks s)]
+  (let [lines (split-on-blank-lines s)]
     (map p lines)))
+
+(defn parse-other [s]
+  (let [lines (split-on-blank-lines s)
+        parserfn #(if (heading-line? %) (parse-heading %) (p %) )]
+    (map parserfn lines)))
 
 (defn parse [s]
   (let [children
@@ -22,9 +27,6 @@
           (blank? s)
           nil
 
-          (> (num-leading-asterisks s) 0)
-          (parse-headings s)
-
           :else
-          (parse-paragraphs s))]
+          (parse-other s))]
     (body children)))

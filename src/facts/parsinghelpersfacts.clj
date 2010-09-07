@@ -1,11 +1,15 @@
-(ns facts.parsing-helpers
+(ns facts.parsinghelpers
+  (:use parsinghelpers)
   (:use midje.sweet))
 
-(fact (num-leading-asterisks "") => 0)
-(fact (num-leading-asterisks "*") => 0)
-(fact (num-leading-asterisks "* ") => 1)
-(fact (num-leading-asterisks "** ") => 2)
-(fact (num-leading-asterisks "*** ") => 3)
-(fact (num-leading-asterisks "*** *** ") => 3)
-(fact (num-leading-asterisks "***      *") => 3)
-(fact (num-leading-asterisks "* This is a top level header") => 1)
+(fact (heading-level "") => 0)
+(fact (heading-level "*") => 0)
+(fact (heading-level "* ") => 1)
+(fact (heading-level "** ") => 2)
+(fact (heading-level "*** ") => 3)
+(fact (heading-level "*** *** ") => 3)
+(fact (heading-level "***      *") => 3)
+(fact (heading-level "* This is a top level header") => 1)
+
+(fact (heading-line? "* Goat") => true)
+(fact (heading-line? "Goat") => false)

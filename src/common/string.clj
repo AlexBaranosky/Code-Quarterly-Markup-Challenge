@@ -4,8 +4,8 @@
 (defn blank? [s]
   (nil? (re-find #"\S" s)))
 
-(defn split-non-blank-chunks [s]
+(defn split-on-blank-lines [s]
   (split (.trim s) #"\s*\n\s*\n\s*"))
 
 (defn multi-line? [s]
-  (< 1 (count (split-non-blank-chunks s))))
+  (< 1 (count (split-on-blank-lines s))))

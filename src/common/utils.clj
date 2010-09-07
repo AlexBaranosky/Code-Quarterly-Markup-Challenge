@@ -14,6 +14,6 @@
   (partial map list))
 
 (defn only [seq]
-  (if (= 1 count)
+  (if (= 1 (count seq))
     (first seq)
-    (throw "sequence must have exactly one element")))
+    (throw (Exception. "sequence must have exactly one element"))))
