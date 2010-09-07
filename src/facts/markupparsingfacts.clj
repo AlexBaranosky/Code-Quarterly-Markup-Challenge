@@ -47,10 +47,44 @@ paragraph 2")
   that spans multiple lines") => (body [(blockquote (p "This is a blockquote paragraph that spans multiple lines"))]))
 
 ;12_multiple_paragraph_blockquote
-(fact (parse "  blockquote
-
+(fact (parse
+"  blockquote
+  1
+   
   second
 
   third")
   =>
-  (body (blockquote [(p "blockquote") (p "second") (p "third")])))
+  (body (blockquote [(p "blockquote 1") (p "second") (p "third")])))
+
+;13_paragraphs_and_blockquotes
+(fact (parse
+"alex
+b
+  bob
+  c
+
+cindy
+d
+
+  david
+  e
+
+  earl
+  f
+
+fred
+g")
+  =>
+  (body
+    [(p "alex
+b")
+     (blockquote (p "bob
+c"))
+     (p "cindy
+d")
+     (blockquote [(p "david
+e") (p "earl
+f")])
+     (p "fred
+g")]))
