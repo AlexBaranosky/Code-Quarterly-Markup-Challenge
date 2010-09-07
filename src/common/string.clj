@@ -6,6 +6,3 @@
 
 (defn split-on-blank-lines [s]
   (split (.trim s) #"\s*\n\s*\n\s*"))
-
-(defn multi-line? [s]
-  (< 1 (count (split-on-blank-lines s))))

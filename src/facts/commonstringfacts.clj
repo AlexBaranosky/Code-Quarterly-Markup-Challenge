@@ -28,17 +28,3 @@
 (fact (split-on-blank-lines "123
 
   abc") => ["123" "abc"])
-
-(fact (multi-line? "") => false)
-
-(fact (multi-line? " 123 abc") => false)
-
-(fact (multi-line? " 123
-  abc") => false)
-
-(fact (multi-line? "123
-") => false)
-
-(fact (multi-line? "123
-
-  abc") => true)

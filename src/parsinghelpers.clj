@@ -1,4 +1,8 @@
-(ns parsinghelpers)
+(ns parsinghelpers
+  (:use common.string))
+
+(defn multi-sectioned? [s]
+  (< 1 (count (split-on-blank-lines s))))
 
 (defn heading-level [s]
   (count (second (re-find #"^(\*+) " s))))

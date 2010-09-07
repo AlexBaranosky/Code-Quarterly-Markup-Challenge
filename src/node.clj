@@ -26,6 +26,9 @@
 (def h3
   (partial h 3))
 
+(def blockquote
+  (partial make-node :blockquote))
+
 ;TODO: something to go through and take (keywd x y) and turn it into (make-node :keywd x y) for ANY keywd
 ;(defmacro body [forms]
 ;  forms)

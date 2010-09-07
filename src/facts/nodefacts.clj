@@ -31,3 +31,5 @@
 (fact
   (h3 ...children...) => (make-node :h3 ...children...))
 
+(fact
+  (blockquote ...children...) => (make-node :blockquote ...children...))

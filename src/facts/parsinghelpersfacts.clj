@@ -13,3 +13,17 @@
 
 (fact (heading-line? "* Goat") => true)
 (fact (heading-line? "Goat") => false)
+
+(fact (multi-sectioned? "") => false)
+
+(fact (multi-sectioned? " 123 abc") => false)
+
+(fact (multi-sectioned? " 123
+  abc") => false)
+
+(fact (multi-sectioned? "123
+") => false)
+
+(fact (multi-sectioned? "123
+
+  abc") => true)
