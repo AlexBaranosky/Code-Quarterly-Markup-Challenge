@@ -8,17 +8,9 @@
         content (.substring s (inc level))]
     (h level content)))
 
-;(defn parse-headings [s]
-;  (let [sections (split-on-blank-lines s)]
-;    (map parse-heading sections)))
-
-;(defn parse-paragraphs [s]
-;  (let [sections (split-on-blank-lines s)]
-;    (map p sections)))
-
 (defn parse-blockquote [s]
-  (let [content (trim-n-crunch-whitespace s)]
-    (blockquote (p content))))
+  (let [paragraphs (map trim-n-crunch-whitespace (split-on-blank-lines s))]
+    (blockquote (map p paragraphs))))
 
 (defn parse-other [s]
   (let [sections (split-on-blank-lines s)
