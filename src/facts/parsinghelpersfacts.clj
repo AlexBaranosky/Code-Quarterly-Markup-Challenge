@@ -11,8 +11,8 @@
 (fact (heading-level "***      *") => 3)
 (fact (heading-level "* This is a top level header") => 1)
 
-(fact (heading-line? "* Goat") => true)
-(fact (heading-line? "Goat") => false)
+(fact (heading? "* Goat") => true)
+(fact (heading? "Goat") => false)
 
 (fact (multi-sectioned? "") => false)
 

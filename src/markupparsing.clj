@@ -9,21 +9,21 @@
     (h level content)))
 
 (defn parse-headings [s]
-  (let [lines (split-on-blank-lines s)]
-    (map parse-heading lines)))
+  (let [sections (split-on-blank-lines s)]
+    (map parse-heading sections)))
 
 (defn parse-paragraphs [s]
-  (let [lines (split-on-blank-lines s)]
-    (map p lines)))
+  (let [sections (split-on-blank-lines s)]
+    (map p sections)))
 
 (defn parse-blockquote [s]
   (let [content (.substring s 2)]
     (blockquote (p content))))
 
 (defn parse-other [s]
-  (let [lines (split-on-blank-lines s)
-        parserfn #(if (heading-line? %) (parse-heading %) (p %))]
-    (map parserfn lines)))
+  (let [sections (split-on-blank-lines s)
+        parserfn #(if (heading? %) (parse-heading %) (p %))]
+    (map parserfn sections)))
 
 (defn parse [s]
   (let [children

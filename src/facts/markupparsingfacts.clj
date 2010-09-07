@@ -41,3 +41,7 @@ paragraph 2")
 
 ;10_blockquotes
 (fact (parse "  This is a blockquote paragraph") => (body [(blockquote (p "This is a blockquote paragraph"))]))
+
+;11_multiple_blockquotes
+(fact (parse "  This is a blockquote paragraph
+  that spans multiple lines") => (body [(blockquote (p "This is a blockquote paragraph that spans multiple lines"))]))
