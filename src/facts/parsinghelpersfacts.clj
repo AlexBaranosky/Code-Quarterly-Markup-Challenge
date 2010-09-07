@@ -27,3 +27,6 @@
 (fact (multi-sectioned? "123
 
   abc") => true)
+
+(fact (blockquote? "  blockquote!") => true)
+(fact (blockquote? "not") => false)

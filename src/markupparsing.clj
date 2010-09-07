@@ -16,9 +16,13 @@
   (let [lines (split-on-blank-lines s)]
     (map p lines)))
 
+(defn parse-blockquote [s]
+  (let [content (.substring s 2)]
+    (blockquote (p content))))
+
 (defn parse-other [s]
   (let [lines (split-on-blank-lines s)
-        parserfn #(if (heading-line? %) (parse-heading %) (p %) )]
+        parserfn #(if (heading-line? %) (parse-heading %) (p %))]
     (map parserfn lines)))
 
 (defn parse [s]
@@ -26,6 +30,9 @@
         (cond
           (blank? s)
           nil
+
+          (blockquote? s)
+          (parse-blockquote s)
 
           :else
           (parse-other s))]

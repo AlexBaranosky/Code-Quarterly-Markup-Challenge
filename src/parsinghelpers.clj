@@ -9,3 +9,7 @@
 
 (defn heading-line? [s]
   (> (heading-level s) 0))
+
+
+(defn blockquote? [s]
+  ( > (count (re-find #"^  " s)) 0))
