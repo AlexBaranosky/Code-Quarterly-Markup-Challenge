@@ -5,14 +5,8 @@
 (fact
   (zip [1 2 3] [4 5 6]) => [[1 4] [2 5] [3 6]])
 
-;(fact
-;  (only [1]) => 1)
-;
-;(expect
-;  (only [1 2]) => (throws Error "hi"))
+(fact (any? odd? [1 3]) => true)
 
-;(expect (only []) => (throws Error "hi"))
+(fact (any? odd? [2 4]) => false)
 
-;(fact
-;  (only nil) => exception)
-
+(fact (any? odd? [1 4]) => true)

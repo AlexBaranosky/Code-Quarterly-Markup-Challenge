@@ -3,9 +3,54 @@
   (:use node)
   (:use midje.sweet))
 
-;"01_empty"
-(fact (parse "") => (body nil))
+(fact (not-heading?-not-blockquote? "* heading") => false)
+(fact (not-heading?-not-blockquote? "  blockquote!") => false)
+(fact (not-heading?-not-blockquote? "paragraph") => true)
 
+(fact (first-sections-w-parserfns []) => [])
+(fact (remaining-sections         []) => [])
+
+(fact (first-sections-w-parserfns [""]) => [])
+(fact (remaining-sections         [""]) => [])
+
+(fact (first-sections-w-parserfns ["paragraph"]) => [["paragraph"], parse-p-sections])
+(fact (remaining-sections         ["paragraph"]) => [])
+
+(fact (first-sections-w-parserfns ["paragraph", "  blockquote", "  blockquote2"]) => [["paragraph"], parse-p-sections])
+(fact (remaining-sections         ["paragraph", "  blockquote", "  blockquote2"]) => ["  blockquote", "  blockquote2"])
+
+(fact (first-sections-w-parserfns ["  blockquote1", "  blockquote2", "paragraph"]) => [["  blockquote1", "  blockquote2"], parse-blockquote-sections])
+(fact (remaining-sections         ["  blockquote1", "  blockquote2", "paragraph"]) => ["paragraph"])
+
+(fact (parse-blockquote-sections ["  bq1" "  bq2" "  bq3"]) => (blockquote [(p "bq1") (p "bq2") (p "bq3")]))
+(fact (parse-heading-sections ["* 1" "* 2" "* 3"]) => [(h1 "1") (h1 "2") (h1 "3")])
+(fact (parse-p-sections ["1" "2" "3"]) => [(p "1") (p "2") (p "3")])
+
+(fact (empty?-or-blank? "") => true)
+(fact (empty?-or-blank? []) => true)
+(fact (empty?-or-blank? [[]]) => true)
+(fact (empty?-or-blank? ["" ""]) => true)
+(fact (empty?-or-blank? ["a"]) => false)
+(fact (empty?-or-blank? ["a"]) => false)
+(fact (empty?-or-blank? ["" "a"]) => true)
+
+(fact (tokenize-into-sections-w-parserfns ["  blockquote1", "  blockquote2", "paragraph"])
+  =>
+  [[["  blockquote1", "  blockquote2"], parse-blockquote-sections], [["paragraph"], parse-p-sections]])
+
+(fact (tokenize-into-sections-w-parserfns ["* heading1", "* heading2"])
+  =>
+  [[["* heading1", "* heading2"], parse-heading-sections]])
+
+(fact (tokenize-into-sections-w-parserfns [""]) => [])
+;
+;;;;"01_empty"
+(fact (parse "") => (body []))
+;;
+;;;other
+(fact (parse "hi") => (body (p "hi")))
+;
+;
 ;02_simple_paragraph
 (fact (parse "This is a simple paragraph.") => (body (p "This is a simple paragraph.")))
 
@@ -50,7 +95,7 @@ paragraph 2")
 (fact (parse
 "  blockquote
   1
-   
+
   second
 
   third")
@@ -61,6 +106,7 @@ paragraph 2")
 (fact (parse
 "alex
 b
+
   bob
   c
 

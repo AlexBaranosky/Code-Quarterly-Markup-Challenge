@@ -34,3 +34,18 @@
 (fact (trim-n-crunch-whitespace "  ABC") => "ABC")
 (fact (trim-n-crunch-whitespace "  ABC
   EFG") => "ABC EFG")
+
+(fact (heading-sections? ["* heading"]) => true)
+(fact (heading-sections? ["* heading" "* heading2"]) => true)
+(fact (heading-sections? ["* heading" "not-a-heading"]) => true)
+(fact (heading-sections? ["not-a-heading"]) => false)
+
+(fact (blockquote-sections? ["  blockquote"]) => true)
+(fact (blockquote-sections? ["  blockquote" "  blockquote2"]) => true)
+(fact (blockquote-sections? ["  blockquote" "not-a-blockquote"]) => true)
+(fact (blockquote-sections? ["not-a-blockquote"]) => false)
+
+(fact (blank-sections? [" "]) => true)
+(fact (blank-sections? [" " " not blank!"]) => true)
+(fact (blank-sections? [" " ""]) => true)
+(fact (blank-sections? ["not-blank"]) => false)

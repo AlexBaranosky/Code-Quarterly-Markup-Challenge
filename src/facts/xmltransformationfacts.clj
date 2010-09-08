@@ -5,7 +5,7 @@
 
 ;01_empty.txt
 (fact
-  (to-xml (body nil))
+  (to-xml (body []))
   =>
   "<body/>")
 

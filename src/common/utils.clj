@@ -17,3 +17,6 @@
   (if (= 1 (count seq))
     (first seq)
     (throw (Exception. "sequence must have exactly one element"))))
+
+(defn any? [pred seq]
+  (not-every? #(not (pred %)) seq))

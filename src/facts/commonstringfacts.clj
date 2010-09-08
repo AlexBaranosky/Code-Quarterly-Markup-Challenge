@@ -22,9 +22,11 @@
 
   ghi
 
-  paula balla") => ["groom-self  abc
-  def" "ghi" "paula balla"])
+  paula balla") => ["   groom-self  abc
+  def" "  ghi" "  paula balla"])
 
 (fact (split-on-blank-lines "123
 
-  abc") => ["123" "abc"])
+  abc") => ["123" "  abc"])
+
+(fact (split-on-blank-lines "") => [])

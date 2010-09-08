@@ -5,4 +5,6 @@
   (nil? (re-find #"\S" s)))
 
 (defn split-on-blank-lines [s]
-  (split (.trim s) #"\s*\n\s*\n\s*"))
+  (if (blank? s)
+    []
+    (split s #"\s*\n\s*\n")))
