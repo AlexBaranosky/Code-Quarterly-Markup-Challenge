@@ -10,3 +10,9 @@
 (fact (any? odd? [2 4]) => false)
 
 (fact (any? odd? [1 4]) => true)
+
+;(fact (flatten [1 4]) => [1 4])
+;
+;(fact (flatten [1 [4]]) => [1 4])
+;
+;(fact (flatten [1 [[2 4]]]) => [1 [2 4]])

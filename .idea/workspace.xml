@@ -63,7 +63,7 @@
       <file leaf-file-name="markupparsing.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/markupparsing.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="27" selection-start="1630" selection-end="1630" vertical-scroll-proportion="0.0">
+            <state line="19" column="74" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -81,7 +81,43 @@
       <file leaf-file-name="markupparsingfacts.clj" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/facts/markupparsingfacts.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="0" selection-start="3692" selection-end="3692" vertical-scroll-proportion="0.33215547">
+            <state line="40" column="74" selection-start="2165" selection-end="2165" vertical-scroll-proportion="0.70974153">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nodefacts.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/facts/nodefacts.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="5" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parsinghelpersfacts.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/facts/parsinghelpersfacts.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="6" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commonstringfacts.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/facts/commonstringfacts.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="17" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commonutilsfacts.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/facts/commonutilsfacts.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="63" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,25 +126,7 @@
       <file leaf-file-name="utils.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/common/utils.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="string.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/string.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="unprocessed.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/midje/unprocessed.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="0" selection-start="4318" selection-end="4318" vertical-scroll-proportion="0.0">
+            <state line="22" column="0" selection-start="589" selection-end="637" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -139,14 +157,14 @@
         <option value="$PROJECT_DIR$/src/facts/xmltransformationfacts.clj" />
         <option value="$PROJECT_DIR$/src/xml.clj" />
         <option value="$PROJECT_DIR$/src/facts/commonstringfacts.clj" />
-        <option value="$PROJECT_DIR$/src/common/utils.clj" />
         <option value="$PROJECT_DIR$/src/parsinghelpers.clj" />
-        <option value="$PROJECT_DIR$/src/facts/commonutilsfacts.clj" />
         <option value="$PROJECT_DIR$/src/facts/parsinghelpersfacts.clj" />
         <option value="$PROJECT_DIR$/src/common/string.clj" />
         <option value="$PROJECT_DIR$/src/xmltransformation.clj" />
         <option value="$PROJECT_DIR$/src/midje/token.clj" />
         <option value="$PROJECT_DIR$/src/token.clj" />
+        <option value="$PROJECT_DIR$/src/common/utils.clj" />
+        <option value="$PROJECT_DIR$/src/facts/commonutilsfacts.clj" />
         <option value="$PROJECT_DIR$/src/markupparsing.clj" />
         <option value="$PROJECT_DIR$/src/facts/markupparsingfacts.clj" />
       </list>
@@ -287,6 +305,39 @@
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Clojure Script.markupparsingfacts">
+    <configuration default="false" name="commonstringfacts" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="CodeChallengeMarkup" />
+      <setting name="path" value="$PROJECT_DIR$/src/facts/commonstringfacts.clj" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/facts" />
+      <setting name="repl" value="false" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="nodefacts" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="CodeChallengeMarkup" />
+      <setting name="path" value="$PROJECT_DIR$/src/facts/nodefacts.clj" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/facts" />
+      <setting name="repl" value="false" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="parsinghelpersfacts" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="CodeChallengeMarkup" />
+      <setting name="path" value="$PROJECT_DIR$/src/facts/parsinghelpersfacts.clj" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/facts" />
+      <setting name="repl" value="false" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="false" name="markupparsingfacts" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="CodeChallengeMarkup" />
       <setting name="path" value="$PROJECT_DIR$/src/facts/markupparsingfacts.clj" />
@@ -304,39 +355,6 @@
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workDir" value="$PROJECT_DIR$/src/facts" />
-      <setting name="repl" value="false" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="xmltransformationfacts" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="CodeChallengeMarkup" />
-      <setting name="path" value="$PROJECT_DIR$/src/facts/xmltransformationfacts.clj" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src/facts" />
-      <setting name="repl" value="false" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="acceptancetest" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="CodeChallengeMarkup" />
-      <setting name="path" value="$PROJECT_DIR$/src/facts/acceptancetest.clj" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src/facts" />
-      <setting name="repl" value="false" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="markupparsing" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="CodeChallengeMarkup" />
-      <setting name="path" value="$PROJECT_DIR$/src/markupparsing.clj" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src" />
       <setting name="repl" value="false" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -490,11 +508,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Clojure Script.markupparsingfacts" />
-      <item index="1" class="java.lang.String" itemvalue="Clojure Script.commonutilsfacts" />
-      <item index="2" class="java.lang.String" itemvalue="Clojure Script.xmltransformationfacts" />
-      <item index="3" class="java.lang.String" itemvalue="Clojure Script.acceptancetest" />
-      <item index="4" class="java.lang.String" itemvalue="Clojure Script.markupparsing" />
+      <item index="0" class="java.lang.String" itemvalue="Clojure Script.commonstringfacts" />
+      <item index="1" class="java.lang.String" itemvalue="Clojure Script.nodefacts" />
+      <item index="2" class="java.lang.String" itemvalue="Clojure Script.parsinghelpersfacts" />
+      <item index="3" class="java.lang.String" itemvalue="Clojure Script.markupparsingfacts" />
+      <item index="4" class="java.lang.String" itemvalue="Clojure Script.commonutilsfacts" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -533,9 +551,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20981595" sideWeight="0.68591225" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20981595" sideWeight="0.61316395" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3060046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3787529" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
@@ -575,41 +593,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/32_escaped_bullet_list_marker.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/32_escaped_bullet_list_marker.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/34_modeline.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/34_modeline.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="22" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/33_escapes_not_needed.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/31_escaped_numbered_list_marker.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -645,23 +628,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/token.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="33" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/string.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/utils.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -673,16 +642,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts/parsinghelpersfacts.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="6" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/token.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="33" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts/commonstringfacts.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="17" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/clojure.jar!/clojure/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="535" column="6" selection-start="16763" selection-end="16763" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts/nodefacts.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="5" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/utils.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="589" selection-end="637" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts/commonutilsfacts.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="63" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/markupparsing.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="27" selection-start="1630" selection-end="1630" vertical-scroll-proportion="0.0">
+        <state line="19" column="74" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/facts/markupparsingfacts.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="0" selection-start="3692" selection-end="3692" vertical-scroll-proportion="0.33215547">
+        <state line="40" column="74" selection-start="2165" selection-end="2165" vertical-scroll-proportion="0.70974153">
           <folding />
         </state>
       </provider>

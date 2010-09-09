@@ -20,3 +20,6 @@
 
 (defn any? [pred seq]
   (not-every? #(not (pred %)) seq))
+;
+;(defn flatten [seq]
+;  (reduce concat [] seq))

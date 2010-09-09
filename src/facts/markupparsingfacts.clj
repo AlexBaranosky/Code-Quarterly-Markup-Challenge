@@ -20,11 +20,15 @@
 (fact (take-first-token ["paragraph", "  blockquote", "  blockquote2"]) => (paragraph-token ["paragraph"]))
 (fact (remaining-text-blocks ["paragraph", "  blockquote", "  blockquote2"]) =>  ["  blockquote", "  blockquote2"])
 
+(fact (take-first-token ["* heading1", "* heading2", "paragraph"]) => (heading-token ["* heading1", "* heading2"]))
+(fact (remaining-text-blocks ["paragraph", "  blockquote", "  blockquote2"]) =>  ["  blockquote", "  blockquote2"])
+(fact (tokenize ["paragraph", "* heading1", "* heading2"]) => [(paragraph-token ["paragraph"]), (heading-token ["* heading1", "* heading2"])])
+
 (fact (take-first-token ["  blockquote1", "  blockquote2", "paragraph"]) => (blockquote-token ["  blockquote1", "  blockquote2"]))
 (fact (remaining-text-blocks ["  blockquote1", "  blockquote2", "paragraph"]) => ["paragraph"])
 
-(fact (parse-blockquotes (blockquote-token ["  bq1"])) => (blockquote [(p "bq1")]))
-(fact (parse-blockquotes (blockquote-token ["  bq1" "  bq2" "  bq3"])) => (blockquote [(p "bq1") (p "bq2") (p "bq3")]))
+(fact (parse-blockquotes (blockquote-token ["  bq1"])) => [(blockquote [(p "bq1")])])
+(fact (parse-blockquotes (blockquote-token ["  bq1" "  bq2" "  bq3"])) => [(blockquote [(p "bq1") (p "bq2") (p "bq3")])])
 (fact (parse-headings (heading-token ["* 1" "* 2" "* 3"])) => [(h1 "1") (h1 "2") (h1 "3")])
 (fact (parse-paragraphs (paragraph-token ["1" "2" "3"])) => [(p "1") (p "2") (p "3")])
 (fact (parse-paragraphs (paragraph-token ["1"])) => [(p "1")])
@@ -45,8 +49,10 @@
   =>
   [(heading-token ["* heading1", "* heading2"])])
 
-(fact (tokenize [""]) => empty-token )
-(fact (tokenize ["paragraph"]) => [[["paragraph"], parse-paragraphs], [(first empty-token), (second empty-token)]] )
+(fact (tokenize [""]) => [] )
+(fact (tokenize ["paragraph"]) => [(paragraph-token ["paragraph"])] )
+
+(fact (process-tokens [(paragraph-token ["paragraph"])]) => [(p "paragraph")])
 
 ;;;;"01_empty"
 (fact (parse "") => (body []))
