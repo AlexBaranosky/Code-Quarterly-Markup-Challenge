@@ -35,8 +35,6 @@
 (fact (trim-n-crunch-whitespace "  ABC
   EFG ") => "ABC EFG")
 
-(fact (trim-n-crunch-whitespace-preserving-newlines "  ABC\n  EFG") => "ABC\nEFG")
-
 (fact (heading-sections? ["* heading"]) => true)
 (fact (heading-sections? ["* heading" "* heading2"]) => true)
 (fact (heading-sections? ["* heading" "not-a-heading"]) => true)
