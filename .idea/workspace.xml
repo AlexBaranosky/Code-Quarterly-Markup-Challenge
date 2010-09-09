@@ -60,91 +60,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="parse_string_predicates.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/parse_string_predicates.clj">
+      <file leaf-file-name="19_numbered_list.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/19_numbered_list.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="23" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="markup_parsing.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/markup_parsing.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="44" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="node.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/node.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="token_facts.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/facts/token_facts.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="32" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="acceptance_test.clj" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/facts/acceptance_test.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="150" selection-end="150" vertical-scroll-proportion="0.04896907">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="token.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/token.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="33" selection-start="79" selection-end="114" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common_string_facts.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/facts/common_string_facts.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="31" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="string.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/string.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="42" selection-start="497" selection-end="497" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/utils.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="17" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="17_verbatim_first_line_extra_indented.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/17_verbatim_first_line_extra_indented.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="3" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
+            <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -168,14 +87,14 @@
         <option value="$PROJECT_DIR$/src/common/utils.clj" />
         <option value="$PROJECT_DIR$/src/facts/node_facts.clj" />
         <option value="$PROJECT_DIR$/src/node.clj" />
-        <option value="$PROJECT_DIR$/src/parse_string_predicates.clj" />
         <option value="$PROJECT_DIR$/src/facts/parse_string_predicates_facts.clj" />
         <option value="$PROJECT_DIR$/src/facts/common_utils_facts.clj" />
         <option value="$PROJECT_DIR$/src/facts/acceptance_test.clj" />
         <option value="$PROJECT_DIR$/src/facts/token_facts.clj" />
+        <option value="$PROJECT_DIR$/src/common/string.clj" />
+        <option value="$PROJECT_DIR$/src/parse_string_predicates.clj" />
         <option value="$PROJECT_DIR$/src/token.clj" />
         <option value="$PROJECT_DIR$/src/facts/common_string_facts.clj" />
-        <option value="$PROJECT_DIR$/src/common/string.clj" />
       </list>
     </option>
   </component>
@@ -288,6 +207,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeChallengeMarkup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeChallengeMarkup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
@@ -313,7 +246,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="Clojure Script.acceptance_test">
+  <component name="RunManager" selected="Clojure Script.common_string_facts">
     <configuration default="false" name="acceptance_test" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="CodeChallengeMarkup" />
       <setting name="path" value="$PROJECT_DIR$/src/facts/acceptance_test.clj" />
@@ -547,7 +480,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -559,9 +492,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20920245" sideWeight="0.50230944" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20920245" sideWeight="0.60508084" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4896074" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38683602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4803695" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -602,20 +535,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/facts/common_utils_facts.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="33" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/16_verbatim_with_indentation.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/16_verbatim_with_indentation.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="7" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
@@ -628,14 +547,56 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/18_verbatim_special_xml_chars.txt">
+    <entry file="file://$PROJECT_DIR$/resources/17_verbatim_first_line_extra_indented.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/17_verbatim_first_line_extra_indented.xml">
+    <entry file="file://$PROJECT_DIR$/src/facts/acceptance_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="39" selection-start="1022" selection-end="1022" vertical-scroll-proportion="-0.19496855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/node.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.45564517">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/markup_parsing.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="44" selection-start="399" selection-end="399" vertical-scroll-proportion="0.42137095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts/common_string_facts.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="50" selection-start="662" selection-end="662" vertical-scroll-proportion="0.7822581">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/string.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="42" selection-start="497" selection-end="497" vertical-scroll-proportion="0.8044355">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/18_verbatim_special_xml_chars.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/18_verbatim_special_xml_chars.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -644,70 +605,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/17_verbatim_first_line_extra_indented.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="3" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
+        <state line="1" column="3" selection-start="48" selection-end="48" vertical-scroll-proportion="0.038306452">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/common/utils.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="17" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parse_string_predicates.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="23" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/node.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/markup_parsing.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="44" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
+        <state line="24" column="17" selection-start="628" selection-end="628" vertical-scroll-proportion="0.7701613">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/token.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="33" selection-start="79" selection-end="114" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/facts/common_string_facts.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="31" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/string.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="42" selection-start="497" selection-end="497" vertical-scroll-proportion="0.0">
+        <state line="30" column="67" selection-start="782" selection-end="782" vertical-scroll-proportion="0.57459676">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/facts/token_facts.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="32" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0">
+        <state line="4" column="2" selection-start="73" selection-end="73" vertical-scroll-proportion="0.15322581">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/facts/acceptance_test.clj">
+    <entry file="file://$PROJECT_DIR$/src/parse_string_predicates.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="150" selection-end="150" vertical-scroll-proportion="0.04896907">
+        <state line="14" column="21" selection-start="291" selection-end="291" vertical-scroll-proportion="0.53629035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/19_numbered_list.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

@@ -38,5 +38,6 @@
 (fact (trim-right "s   \n   ") => "s")
 
 (fact (trim-3-rx "   hello\n   world") => "hello\nworld")
+(fact (trim-3-rx "    hello\n    world") => " hello\n world")
 
 

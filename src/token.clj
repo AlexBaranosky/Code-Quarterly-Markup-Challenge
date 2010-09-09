@@ -18,7 +18,7 @@
 (defn parse-blockquotes [token]
   [(blockquote (parse-paragraphs token))])
 
-
+;TODO refactor me
 (defn parse-verbatims [token]
   [(pre (trim-right (apply str (interpose "\n\n" (map trim-3-rx (:sections token))))))])
 
