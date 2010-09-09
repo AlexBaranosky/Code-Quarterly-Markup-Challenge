@@ -3,27 +3,28 @@
   (:use node)
   (:use midje.sweet))
 
-(fact (not-heading?-not-blockquote? "* heading") => false)
-(fact (not-heading?-not-blockquote? "  blockquote!") => false)
-(fact (not-heading?-not-blockquote? "paragraph") => true)
+;(fact (not-heading?-not-blockquote? "* heading") => false)
+;(fact (not-heading?-not-blockquote? "  blockquote!") => false)
+;(fact (not-heading?-not-blockquote? "paragraph") => true)
 
-(fact (first-sections-w-parserfns []) => [])
+(fact (first-sections-w-parserfns []) => empty-sections-w-parserfn)
 (fact (remaining-sections         []) => [])
 
-(fact (first-sections-w-parserfns [""]) => [])
+(fact (first-sections-w-parserfns [""]) => empty-sections-w-parserfn)
 (fact (remaining-sections         [""]) => [])
-
+;
 (fact (first-sections-w-parserfns ["paragraph"]) => [["paragraph"], parse-p-sections])
 (fact (remaining-sections         ["paragraph"]) => [])
+(fact (remaining-sections         ["paragraph" "paragraph" "paragraph"]) => [])
 
-(fact (first-sections-w-parserfns ["paragraph", "  blockquote", "  blockquote2"]) => [["paragraph"], parse-p-sections])
-(fact (remaining-sections         ["paragraph", "  blockquote", "  blockquote2"]) => ["  blockquote", "  blockquote2"])
+;(fact (first-sections-w-parserfns ["paragraph", "  blockquote", "  blockquote2"]) => [["paragraph"], parse-p-sections])
+;(fact (remaining-sections         ["paragraph", "  blockquote", "  blockquote2"]) => ["  blockquote", "  blockquote2"])
+;
+;(fact (first-sections-w-parserfns ["  blockquote1", "  blockquote2", "paragraph"]) => [["  blockquote1", "  blockquote2"], parse-blockquote-sections])
+;(fact (remaining-sections         ["  blockquote1", "  blockquote2", "paragraph"]) => ["paragraph"])
 
-(fact (first-sections-w-parserfns ["  blockquote1", "  blockquote2", "paragraph"]) => [["  blockquote1", "  blockquote2"], parse-blockquote-sections])
-(fact (remaining-sections         ["  blockquote1", "  blockquote2", "paragraph"]) => ["paragraph"])
-
-(fact (parse-blockquote-sections ["  bq1" "  bq2" "  bq3"]) => (blockquote [(p "bq1") (p "bq2") (p "bq3")]))
-(fact (parse-heading-sections ["* 1" "* 2" "* 3"]) => [(h1 "1") (h1 "2") (h1 "3")])
+;(fact (parse-blockquote-sections ["  bq1" "  bq2" "  bq3"]) => (blockquote [(p "bq1") (p "bq2") (p "bq3")]))
+;(fact (parse-heading-sections ["* 1" "* 2" "* 3"]) => [(h1 "1") (h1 "2") (h1 "3")])
 (fact (parse-p-sections ["1" "2" "3"]) => [(p "1") (p "2") (p "3")])
 
 (fact (empty?-or-blank? "") => true)
@@ -34,37 +35,38 @@
 (fact (empty?-or-blank? ["a"]) => false)
 (fact (empty?-or-blank? ["" "a"]) => true)
 
-(fact (tokenize-into-sections-w-parserfns ["  blockquote1", "  blockquote2", "paragraph"])
-  =>
-  [[["  blockquote1", "  blockquote2"], parse-blockquote-sections], [["paragraph"], parse-p-sections]])
+;(fact (tokenize-into-sections-w-parserfns ["  blockquote1", "  blockquote2", "paragraph"])
+;  =>
+;  [[["  blockquote1", "  blockquote2"], parse-blockquote-sections], [["paragraph"], parse-p-sections]])
 
-(fact (tokenize-into-sections-w-parserfns ["* heading1", "* heading2"])
-  =>
-  [[["* heading1", "* heading2"], parse-heading-sections]])
+;(fact (tokenize-into-sections-w-parserfns ["* heading1", "* heading2"])
+;  =>
+;  [[["* heading1", "* heading2"], parse-heading-sections]])
 
-(fact (tokenize-into-sections-w-parserfns [""]) => [])
+;(fact (tokenize-into-sections-w-parserfns [""]) => empty-sections-w-parserfn )
+;(fact (tokenize-into-sections-w-parserfns ["paragraph"]) => [[["paragraph"], parse-p-sections], [(first empty-sections-w-parserfn), (second empty-sections-w-parserfn)]] )
 ;
 ;;;;"01_empty"
 (fact (parse "") => (body []))
 ;;
 ;;;other
 (fact (parse "hi") => (body (p "hi")))
-;
-;
-;02_simple_paragraph
+;;
+;;
+;;02_simple_paragraph
 (fact (parse "This is a simple paragraph.") => (body (p "This is a simple paragraph.")))
-
-;04_two_paragraphs
+;
+;;04_two_paragraphs
 (fact (parse "This is paragraph number one.
 
 This is paragraph number two.")
   =>
   (body [(p "This is paragraph number one.") (p "This is paragraph number two.")]))
 
-;06_header
+;;06_header
 (fact (parse "* This is a top level header") => (body (h1 "This is a top level header")))
-
-;07_headers
+;
+;;07_headers
 (fact (parse "* This is a primary header.
 
 ** This is a secondary header.

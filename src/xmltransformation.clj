@@ -3,8 +3,6 @@
   (:use common.utils))
 
 (defn to-xml [node]
-;  (println (str "node: " node))
-;  (println (str "children: " (:children node)))
   (if (string? node)
     node
     (let [name (name (:name node))
