@@ -3,9 +3,9 @@
   (:use node)
   (:use midje.sweet))
 
-;(fact (not-heading?-not-blockquote? "* heading") => false)
-;(fact (not-heading?-not-blockquote? "  blockquote!") => false)
-;(fact (not-heading?-not-blockquote? "paragraph") => true)
+(fact (not-heading?-not-blockquote? "* heading") => false)
+(fact (not-heading?-not-blockquote? "  blockquote!") => false)
+(fact (not-heading?-not-blockquote? "paragraph") => true)
 
 (fact (take-first-token []) => empty-token)
 (fact (remaining-text-blocks []) => [])
@@ -133,14 +133,8 @@ fred
 g")
   =>
   (body
-    [(p "alex
-b")
-     (blockquote (p "bob
-c"))
-     (p "cindy
-d")
-     (blockquote [(p "david
-e") (p "earl
-f")])
-     (p "fred
-g")]))
+    [(p "alex b")
+     (blockquote (p "bob c"))
+     (p "cindy d")
+     (blockquote [(p "david e") (p "earl f")])
+     (p "fred g")]))

@@ -25,5 +25,9 @@
   (let [trimmed (.trim s)]
     (re-gsub #"\s*\n\s*" " " trimmed)))
 
+(defn trim-n-crunch-whitespace-preserving-newlines [s]
+ (let [trimmed (.trim s)]
+    (re-gsub #"\s*\n\s*" "\n" trimmed)))
+
 (defn blank-sections? [sections]
   (any? blank? sections))

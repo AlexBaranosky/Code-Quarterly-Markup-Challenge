@@ -17,7 +17,7 @@
   [(blockquote (map p (map trim-n-crunch-whitespace (:sections token))))])
 
 (defn parse-paragraphs [token]
-  (map p (:sections token)))
+  (map p (map trim-n-crunch-whitespace (:sections token))))
 
 (defstruct token :sections :parsefn)
 
