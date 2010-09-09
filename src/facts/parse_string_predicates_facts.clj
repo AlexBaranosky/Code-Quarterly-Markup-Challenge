@@ -28,4 +28,5 @@
 (fact (verbatim? "not") => false)
 (fact (verbatim? " not") => false)
 (fact (verbatim? "  not") => false)
-(fact (verbatim? "    not") => false)
+(fact (verbatim? "    not") => true)
+(fact (verbatim? "     not") => true)
