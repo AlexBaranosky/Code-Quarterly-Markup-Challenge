@@ -13,13 +13,5 @@
 (def zip
   (partial map list))
 
-(defn only [seq]
-  (if (= 1 (count seq))
-    (first seq)
-    (throw (Exception. "sequence must have exactly one element"))))
-
-(defn any? [pred seq]
-  (not-every? #(not (pred %)) seq))
-
 (defn re-count [rx s]
   (count (re-seq  rx s)))

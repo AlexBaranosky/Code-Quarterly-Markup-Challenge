@@ -6,5 +6,6 @@
   (if (string? node)
     node
     (let [name (name (:name node))
-          children (:children node)]
-      (tag name (apply str (map to-xml children))))))
+          children (:children node)
+          children-string (apply str (map to-xml children))]
+      (tag name children-string))))
