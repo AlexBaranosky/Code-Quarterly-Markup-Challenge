@@ -13,11 +13,11 @@
 (defn parse-headings [token]
   (map parse-heading (:sections token)))
 
-(defn parse-blockquotes [token]
-  [(blockquote (map p (map trim-n-crunch-whitespace (:sections token))))])
-
 (defn parse-paragraphs [token]
   (map p (map trim-n-crunch-whitespace (:sections token))))
+
+(defn parse-blockquotes [token]
+  [(blockquote (parse-paragraphs token))])
 
 (defstruct token :sections :parsefn)
 
@@ -36,9 +36,6 @@
 (defn not-heading?-not-blockquote? [text-blocks]
   (not (or (heading? text-blocks) (blockquote? text-blocks))))
 
-(defn empty?-or-blank? [text-blocks]
-  (or (empty? text-blocks) (blank-sections? text-blocks)))
-
 (defn take-first-token [text-blocks]
   (cond
     (heading? (first text-blocks))    (heading-token (take-while heading? text-blocks))
@@ -50,14 +47,14 @@
   (drop length-of-first text-blocks)))
 
 (defn tokenize [text-blocks]
-  (if (empty?-or-blank? text-blocks) []
+  (if (empty? text-blocks) []
     (cons (take-first-token text-blocks) (tokenize (remaining-text-blocks text-blocks)))))
 
-(defn process-tokens [tokens]
+(defn parse-tokens [tokens]
   (apply concat (map #((:parsefn %) %) tokens)))
 
 (defn parse [s]
   (let [text-blocks (split-on-blank-lines s)
         tokens (tokenize text-blocks)
-        children (process-tokens tokens)]
+        children (parse-tokens tokens)]
     (body children)))

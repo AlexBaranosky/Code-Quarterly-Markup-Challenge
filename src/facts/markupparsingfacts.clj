@@ -52,7 +52,7 @@
 (fact (tokenize [""]) => [] )
 (fact (tokenize ["paragraph"]) => [(paragraph-token ["paragraph"])] )
 
-(fact (process-tokens [(paragraph-token ["paragraph"])]) => [(p "paragraph")])
+(fact (parse-tokens [(paragraph-token ["paragraph"])]) => [(p "paragraph")])
 
 ;;;;"01_empty"
 (fact (parse "") => (body []))
