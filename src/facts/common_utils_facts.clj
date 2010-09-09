@@ -12,10 +12,3 @@
 (fact (re-count #"1" "1") => 1)
 (fact (re-count #"1" "11") => 2)
 (fact (re-count #"1" "111") => 3)
-
-
-;(fact (flatten [1 4]) => [1 4])
-;
-;(fact (flatten [1 [4]]) => [1 4])
-;
-;(fact (flatten [1 [[2 4]]]) => [1 [2 4]])

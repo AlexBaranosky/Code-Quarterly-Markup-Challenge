@@ -34,3 +34,9 @@
 (fact (trim-n-crunch-whitespace "  ABC") => "ABC")
 (fact (trim-n-crunch-whitespace "  ABC
   EFG ") => "ABC EFG")
+
+(fact (trim-right "s   \n   ") => "s")
+
+(fact (trim-3-rx "   hello\n   world") => "hello\nworld")
+
+

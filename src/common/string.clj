@@ -13,3 +13,10 @@
 (defn trim-n-crunch-whitespace [s]
   (let [trimmed (.trim s)]
     (re-gsub #"\s*\n\s*" " " trimmed)))
+
+(defn trim-right [s]
+  (re-gsub #"\s+$" "" s))
+
+(defn trim-3-rx [s]
+  (let [first-pass (re-gsub #"(^   )" "" s)]
+    (re-gsub #"(\n   )" "\n" first-pass)))

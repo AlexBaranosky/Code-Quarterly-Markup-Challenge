@@ -1,7 +1,8 @@
 (ns token
   (:use parse-string-predicates)
   (:use node)
-  (:use common.string))
+  (:use common.string)
+  (:use clojure.contrib.str-utils))
 
 (defn parse-heading [s]
   (let [hlevel (heading-level-of s)
@@ -17,8 +18,9 @@
 (defn parse-blockquotes [token]
   [(blockquote (parse-paragraphs token))])
 
+
 (defn parse-verbatims [token]
- (map pre (map trim-n-crunch-whitespace (:sections token))))
+  [(pre (trim-right (apply str (interpose "\n\n" (map trim-3-rx (:sections token))))))])
 
 (defstruct token :sections :parsefn)
 

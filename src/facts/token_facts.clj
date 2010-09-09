@@ -10,3 +10,6 @@
 (fact (parse-paragraphs (paragraph-token ["1"])) => [(p "1")])
 
 (fact (parse-verbatims (verbatim-token ["   verbatim"])) => [(pre "verbatim")])
+(fact (parse-verbatims (verbatim-token ["   verbatim1" "   verbatim2"])) => [(pre "verbatim1\n\nverbatim2")])
+(fact (parse-verbatims (verbatim-token ["   verbatim1" "    verbatim2"])) => [(pre "verbatim1\n\n verbatim2")])
+(fact (parse-verbatims (verbatim-token ["     verbatim1" "verbatim2"])) => [(pre "  verbatim1\n\nverbatim2")])
