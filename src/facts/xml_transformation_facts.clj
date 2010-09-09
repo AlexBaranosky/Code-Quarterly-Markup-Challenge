@@ -1,5 +1,5 @@
-(ns facts.xmltransformationfacts
-  (:use xmltransformation)
+(ns facts.xml-transformation-facts
+  (:use xml-transformation)
   (:use node)
   (:use midje.sweet))
 

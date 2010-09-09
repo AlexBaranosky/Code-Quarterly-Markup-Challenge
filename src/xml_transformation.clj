@@ -1,4 +1,4 @@
-(ns xmltransformation
+(ns xml-transformation
   (:use xml)
   (:use common.utils))
 

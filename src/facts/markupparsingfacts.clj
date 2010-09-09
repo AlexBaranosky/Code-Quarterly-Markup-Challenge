@@ -1,11 +1,8 @@
-(ns facts.markupparsingfacts
-  (:use markupparsing)
+(ns facts.markup-parsing-facts
+  (:use markup-parsing)
+  (:use token)
   (:use node)
   (:use midje.sweet))
-
-(fact (not-heading?-not-blockquote? "* heading") => false)
-(fact (not-heading?-not-blockquote? "  blockquote!") => false)
-(fact (not-heading?-not-blockquote? "paragraph") => true)
 
 ;(fact (take-first-token []) => empty-token)
 ;(fact (remaining-text-blocks []) => [])
@@ -27,19 +24,6 @@
 (fact (take-first-token ["  blockquote1", "  blockquote2", "paragraph"]) => (blockquote-token ["  blockquote1", "  blockquote2"]))
 (fact (remaining-text-blocks ["  blockquote1", "  blockquote2", "paragraph"]) => ["paragraph"])
 
-(fact (parse-blockquotes (blockquote-token ["  bq1"])) => [(blockquote [(p "bq1")])])
-(fact (parse-blockquotes (blockquote-token ["  bq1" "  bq2" "  bq3"])) => [(blockquote [(p "bq1") (p "bq2") (p "bq3")])])
-(fact (parse-headings (heading-token ["* 1" "* 2" "* 3"])) => [(h1 "1") (h1 "2") (h1 "3")])
-(fact (parse-paragraphs (paragraph-token ["1" "2" "3"])) => [(p "1") (p "2") (p "3")])
-(fact (parse-paragraphs (paragraph-token ["1"])) => [(p "1")])
-
-(fact (empty?-or-blank? "") => true)
-(fact (empty?-or-blank? []) => true)
-(fact (empty?-or-blank? [[]]) => true)
-(fact (empty?-or-blank? ["" ""]) => true)
-(fact (empty?-or-blank? ["a"]) => false)
-(fact (empty?-or-blank? ["a"]) => false)
-(fact (empty?-or-blank? ["" "a"]) => true)
 
 (fact (tokenize ["  blockquote1", "  blockquote2", "paragraph"])
   =>
@@ -49,7 +33,7 @@
   =>
   [(heading-token ["* heading1", "* heading2"])])
 
-(fact (tokenize [""]) => [] )
+;(fact (tokenize [""]) => [] ) ; not a valid state really
 (fact (tokenize ["paragraph"]) => [(paragraph-token ["paragraph"])] )
 
 (fact (parse-tokens [(paragraph-token ["paragraph"])]) => [(p "paragraph")])

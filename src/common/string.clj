@@ -1,4 +1,5 @@
 (ns common.string
+  (:use clojure.contrib.str-utils)
   (:use [clojure.contrib.str-utils2 :only (split)]))
 
 (defn blank? [s]
@@ -8,3 +9,7 @@
   (if (blank? s)
     []
     (split s #"\s*\n\s*\n")))
+
+(defn trim-n-crunch-whitespace [s]
+  (let [trimmed (.trim s)]
+    (re-gsub #"\s*\n\s*" " " trimmed)))

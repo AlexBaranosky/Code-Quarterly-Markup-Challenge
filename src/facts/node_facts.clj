@@ -1,4 +1,4 @@
-(ns facts.nodefacts
+(ns facts.node-facts
   (:use node)
   (:use midje.sweet))
 

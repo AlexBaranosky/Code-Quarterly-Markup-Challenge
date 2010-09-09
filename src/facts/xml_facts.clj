@@ -1,4 +1,4 @@
-(ns facts.xmlfacts
+(ns facts.xml-facts
   (:use xml)
   (:use midje.sweet))
 

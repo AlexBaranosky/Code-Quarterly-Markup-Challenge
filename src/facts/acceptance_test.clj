@@ -1,9 +1,9 @@
-(ns acceptancetest
+(ns acceptance-test
   (:use clojure.test)
   (:use facts.dom)
-  (:use markupparsing)
+  (:use markup-parsing)
   (:use node)
-  (:use xmltransformation)
+  (:use xml-transformation)
   (:use common.utils))
 
 (def example-files ["01_empty"

@@ -30,3 +30,7 @@
   abc") => ["123" "  abc"])
 
 (fact (split-on-blank-lines "") => [])
+
+(fact (trim-n-crunch-whitespace "  ABC") => "ABC")
+(fact (trim-n-crunch-whitespace "  ABC
+  EFG ") => "ABC EFG")
