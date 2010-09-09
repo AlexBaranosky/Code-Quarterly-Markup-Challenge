@@ -1,5 +1,6 @@
 (ns markupparsing
   (:use node)
+  (:use token)
   (:use parsinghelpers)
   (:use common.utils)
   (:use common.string))
@@ -9,55 +10,56 @@
         content (.substring s (inc hlevel))]
     (h hlevel content)))
 
-(defn parse-heading-sections [sections]
-  (map parse-heading sections))
+(defn parse-headings [token]
+  (map parse-heading (:sections token)))
 
-(defn parse-blockquote-sections [sections]
-  (blockquote (map p (map trim-n-crunch-whitespace sections))))
+(defn parse-blockquotes [token]
+  (blockquote (map p (map trim-n-crunch-whitespace (:sections token)))))
 
-(defn not-heading?-not-blockquote? [sections]
-  (not (or (heading? sections) (blockquote? sections))))
+(defn parse-paragraphs [token]
+  (map p (:sections token)))
 
-(defn empty?-or-blank? [sections]
-  (or (= sections [[]]) (empty? sections) (blank-sections? sections)))
+(defstruct token :sections :parsefn)
 
-(defn parse-p-sections [sections]
-  (map p sections))
+(def make-token
+  (partial struct token))
 
-(def empty-sections-w-parserfn [[], (fn [x] [])])
-(def empty-sections-w-parserfn-seq [empty-sections-w-parserfn])
+(defn heading-token [text-blocks]
+  (make-token text-blocks parse-headings))
 
-(defn first-sections-w-parserfns [sections]
+(defn blockquote-token [text-blocks]
+  (make-token text-blocks parse-blockquotes))
+
+(defn paragraph-token [text-blocks]
+  (make-token text-blocks parse-paragraphs))
+
+(defn not-heading?-not-blockquote? [text-blocks]
+  (not (or (heading? text-blocks) (blockquote? text-blocks))))
+
+(defn empty?-or-blank? [text-blocks]
+  (or (= text-blocks [[]]) (empty? text-blocks) (blank-sections? text-blocks)))
+
+(def empty-token (make-token [] (fn [token] [])))
+(def empty-token-seq [empty-token])
+
+(defn take-first-token [text-blocks]
   (cond
-    (empty?-or-blank? sections)
-    empty-sections-w-parserfn
+    (empty?-or-blank? text-blocks)    empty-token
+    (heading? (first text-blocks))    (heading-token    (take-while heading? text-blocks))
+    (blockquote? (first text-blocks)) (blockquote-token (take-while blockquote? text-blocks))
+    :else                             (paragraph-token  (take-while not-heading?-not-blockquote? text-blocks))))
 
-        (heading? (first sections))
-        [(take-while heading? sections), parse-heading-sections]
+(defn remaining-text-blocks [text-blocks]
+  (if (empty?-or-blank? text-blocks) []
+    (drop (count (:sections (take-first-token text-blocks))) text-blocks)))
 
-        (blockquote? (first sections))
-        [(take-while blockquote? sections), parse-blockquote-sections]
-
-    :else ;p
-;    [sections, parse-p-sections]))
-    [(take-while not-heading?-not-blockquote? sections), parse-p-sections]))
-
-(defn remaining-sections [sections]
-  (if (empty?-or-blank? sections) []
-    (drop (count (first (first-sections-w-parserfns sections))) sections)))
-
-(defn parse-sections [sections-w-parserfn]
-  (let [parserfn (second sections-w-parserfn)
-        sections (first sections-w-parserfn)]
-    (parserfn sections)))
-
-(defn tokenize-into-sections-w-parserfns [sections]
-  (if (empty?-or-blank? sections) empty-sections-w-parserfn-seq
-    (cons (first-sections-w-parserfns sections) (tokenize-into-sections-w-parserfns (remaining-sections sections)))))
+(defn tokenize [text-blocks]
+  (if (empty?-or-blank? text-blocks) empty-token-seq
+    (cons (take-first-token text-blocks) (tokenize (remaining-text-blocks text-blocks)))))
 
 (defn parse [s]
   (let [text-blocks (split-on-blank-lines s)
-        sections-w-parserfns (tokenize-into-sections-w-parserfns text-blocks)
-        children (map parse-sections sections-w-parserfns)]
+        tokens (tokenize text-blocks)
+        children (map #((:parsefn %) %) tokens)]
     (body children)))
 
