@@ -14,23 +14,18 @@
 (fact (heading? "* Goat") => true)
 (fact (heading? "Goat") => false)
 
-(fact (multi-sectioned? "") => false)
-
-(fact (multi-sectioned? " 123 abc") => false)
-
-(fact (multi-sectioned? " 123
-  abc") => false)
-
-(fact (multi-sectioned? "123
-") => false)
-
-(fact (multi-sectioned? "123
-
-  abc") => true)
-
 (fact (blockquote? "  blockquote!") => true)
 (fact (blockquote? "not") => false)
+(fact (blockquote? " not") => false)
+(fact (blockquote? "   not") => false)
+(fact (blockquote? "    not") => false)
 
-(fact (not-heading?-not-blockquote? "* heading") => false)
-(fact (not-heading?-not-blockquote? "  blockquote!") => false)
-(fact (not-heading?-not-blockquote? "paragraph") => true)
+(fact (paragraph? "* heading") => false)
+(fact (paragraph? "  blockquote!") => false)
+(fact (paragraph? "paragraph") => true)
+
+(fact (verbatim? "   verbatim") => true)
+(fact (verbatim? "not") => false)
+(fact (verbatim? " not") => false)
+(fact (verbatim? "  not") => false)
+(fact (verbatim? "    not") => false)

@@ -28,3 +28,6 @@
 
 (def blockquote
   (partial make-node :blockquote))
+
+(def pre
+  (partial make-node :pre))

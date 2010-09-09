@@ -2,9 +2,6 @@
   (:use common.string)
   (:use common.utils))
 
-(defn multi-sectioned? [s]
-  (< 1 (count (split-on-blank-lines s))))
-
 (defn heading-level-of [s]
   (count (second (re-find #"^(\*+) " s))))
 
@@ -12,7 +9,10 @@
   (> (heading-level-of s) 0))
 
 (defn blockquote? [s]
-  (> (count (re-find #"^  " s)) 0))
+  (= (re-count #"^\s{2}\S" s) 1))
 
-(defn not-heading?-not-blockquote? [s]
-  (not (or (heading? s) (blockquote? s))))
+(defn verbatim? [s]
+  (= (re-count #"^\s{3}\S" s) 1))
+
+(defn paragraph? [s]
+  (not (or (heading? s) (blockquote? s) (verbatim? s))))

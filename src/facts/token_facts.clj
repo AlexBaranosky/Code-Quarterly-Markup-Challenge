@@ -8,3 +8,5 @@
 (fact (parse-headings (heading-token ["* 1" "* 2" "* 3"])) => [(h1 "1") (h1 "2") (h1 "3")])
 (fact (parse-paragraphs (paragraph-token ["1" "2" "3"])) => [(p "1") (p "2") (p "3")])
 (fact (parse-paragraphs (paragraph-token ["1"])) => [(p "1")])
+
+(fact (parse-verbatims (verbatim-token ["   verbatim"])) => [(pre "verbatim")])

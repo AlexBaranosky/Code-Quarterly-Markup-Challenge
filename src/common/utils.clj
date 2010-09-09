@@ -20,6 +20,6 @@
 
 (defn any? [pred seq]
   (not-every? #(not (pred %)) seq))
-;
-;(defn flatten [seq]
-;  (reduce concat [] seq))
+
+(defn re-count [rx s]
+  (count (re-seq  rx s)))

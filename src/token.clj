@@ -17,6 +17,9 @@
 (defn parse-blockquotes [token]
   [(blockquote (parse-paragraphs token))])
 
+(defn parse-verbatims [token]
+ (map pre (map trim-n-crunch-whitespace (:sections token))))
+
 (defstruct token :sections :parsefn)
 
 (def make-token
@@ -27,6 +30,9 @@
 
 (defn blockquote-token [text-blocks]
   (make-token text-blocks parse-blockquotes))
+
+(defn verbatim-token [text-blocks]
+  (make-token text-blocks parse-verbatims))
 
 (defn paragraph-token [text-blocks]
   (make-token text-blocks parse-paragraphs))

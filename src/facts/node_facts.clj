@@ -33,3 +33,7 @@
 
 (fact
   (blockquote ...children...) => (make-node :blockquote ...children...))
+
+
+(fact
+  (pre ...children...) => (make-node :pre ...children...))
