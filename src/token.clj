@@ -19,7 +19,8 @@
   [(blockquote (parse-paragraphs token))])
 
 (defn parse-ordered-lists [token]
-  [(ol (map #(li %) (map p (map trim-n-crunch-whitespace (map #(.substring % 3) (:sections token))))))])
+  (let [sections-of-text (map trim-n-crunch-whitespace (map #(.substring % 3) (:sections token)))]
+  [(ol (map li (map p sections-of-text)))]))
 
 ;TODO refactor me
 (defn parse-verbatims [token]

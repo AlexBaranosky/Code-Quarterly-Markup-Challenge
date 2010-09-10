@@ -18,4 +18,4 @@
   (matches? #"^  #" s))
 
 (defn paragraph? [s]
-  (not (or (heading? s) (blockquote? s) (verbatim? s))))
+  (not (or (heading? s) (blockquote? s) (verbatim? s) (ordered-list? s))))
