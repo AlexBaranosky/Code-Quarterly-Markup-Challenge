@@ -9,7 +9,7 @@
   (> (heading-level-of s) 0))
 
 (defn blockquote? [s]
-  (matches? #"^  [^#\s]" s))
+  (matches? #"^  [^#\s-]" s))
 
 (defn verbatim? [s]
   (matches? #"^   " s))
@@ -17,5 +17,8 @@
 (defn ordered-list? [s]
   (matches? #"^  #" s))
 
+(defn unordered-list? [s]
+  (matches? #"^  - " s))
+
 (defn paragraph? [s]
-  (not (or (heading? s) (blockquote? s) (verbatim? s) (ordered-list? s))))
+  (not (or (heading? s) (blockquote? s) (verbatim? s) (ordered-list? s) (unordered-list? s))))

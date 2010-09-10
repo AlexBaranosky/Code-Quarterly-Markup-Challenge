@@ -63,25 +63,34 @@
       <file leaf-file-name="token_facts.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/facts/token_facts.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="93" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0">
+            <state line="18" column="35" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="acceptance_test.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/facts/acceptance_test.clj">
+      <file leaf-file-name="node_facts.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/facts/node_facts.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="43" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.0">
+            <state line="41" column="5" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xml_transformation.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xml_transformation.clj">
+      <file leaf-file-name="node.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/node.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
+            <state line="34" column="5" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="markupparsingfacts.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/facts/markupparsingfacts.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="4" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -99,7 +108,16 @@
       <file leaf-file-name="token.clj" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/token.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="24" selection-start="545" selection-end="545" vertical-scroll-proportion="0.875">
+            <state line="36" column="58" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.4">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="acceptance_test.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/facts/acceptance_test.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="0" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,7 +126,7 @@
       <file leaf-file-name="parse_string_predicates.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/parse_string_predicates.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="54" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
+            <state line="19" column="30" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -117,7 +135,7 @@
       <file leaf-file-name="parse_string_predicates_facts.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/facts/parse_string_predicates_facts.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="57" selection-start="738" selection-end="738" vertical-scroll-proportion="0.0">
+            <state line="18" column="14" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -126,25 +144,7 @@
       <file leaf-file-name="markup_parsing.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/markup_parsing.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="15" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common_utils_facts.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/facts/common_utils_facts.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="7" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/utils.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="28" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+            <state line="11" column="14" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -168,13 +168,13 @@
         <option value="$PROJECT_DIR$/src/facts/common_string_facts.clj" />
         <option value="$PROJECT_DIR$/src/xml_transformation.clj" />
         <option value="$PROJECT_DIR$/src/facts/common_utils_facts.clj" />
+        <option value="$PROJECT_DIR$/src/common/utils.clj" />
+        <option value="$PROJECT_DIR$/src/markup_parsing.clj" />
         <option value="$PROJECT_DIR$/src/facts/parse_string_predicates_facts.clj" />
+        <option value="$PROJECT_DIR$/src/parse_string_predicates.clj" />
         <option value="$PROJECT_DIR$/src/facts/node_facts.clj" />
         <option value="$PROJECT_DIR$/src/node.clj" />
         <option value="$PROJECT_DIR$/src/facts/token_facts.clj" />
-        <option value="$PROJECT_DIR$/src/common/utils.clj" />
-        <option value="$PROJECT_DIR$/src/markup_parsing.clj" />
-        <option value="$PROJECT_DIR$/src/parse_string_predicates.clj" />
         <option value="$PROJECT_DIR$/src/token.clj" />
       </list>
     </option>
@@ -560,9 +560,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20920245" sideWeight="0.5808314" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20920245" sideWeight="0.7124711" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41108546" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27944574" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
@@ -602,20 +602,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/facts/markupparsingfacts.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/node.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="24" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/clojure.jar!/clojure/core.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1566" column="6" selection-start="51045" selection-end="51045" vertical-scroll-proportion="0.0">
@@ -637,13 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/facts/node_facts.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="5" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/facts/common_utils_facts.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="7" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
@@ -651,44 +630,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/facts/token_facts.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="93" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/utils.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="28" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/facts/parse_string_predicates_facts.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="57" selection-start="738" selection-end="738" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/markup_parsing.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="15" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parse_string_predicates.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="54" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/facts/acceptance_test.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="43" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -707,9 +651,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/markup_parsing.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="14" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts/parse_string_predicates_facts.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="14" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parse_string_predicates.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="30" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts/node_facts.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="5" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts/markupparsingfacts.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts/token_facts.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="35" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facts/acceptance_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/node.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="5" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/token.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="24" selection-start="545" selection-end="545" vertical-scroll-proportion="0.875">
+        <state line="36" column="58" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.4">
           <folding />
         </state>
       </provider>

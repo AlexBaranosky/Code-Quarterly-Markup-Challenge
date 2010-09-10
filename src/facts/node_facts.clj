@@ -42,4 +42,7 @@
   (ol ...children...) => (make-node :ol ...children...))
 
 (fact
+  (ul ...children...) => (make-node :ul ...children...))
+
+(fact
   (li ...children...) => (make-node :li ...children...))

@@ -15,3 +15,5 @@
 (fact (parse-verbatims (verbatim-token ["     verbatim1" "verbatim2"])) => [(pre "  verbatim1\n\nverbatim2")])
 
 (fact (parse-ordered-lists (ordered-list-token ["  #ordered list"])) => [(ol (li (p "ordered list")))])
+
+(fact (parse-unordered-lists (unordered-list-token ["  - unordered list"])) => [(ul (li (p "unordered list")))])

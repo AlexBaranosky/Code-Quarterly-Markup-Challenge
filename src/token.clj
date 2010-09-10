@@ -18,9 +18,13 @@
 (defn parse-blockquotes [token]
   [(blockquote (parse-paragraphs token))])
 
-(defn parse-ordered-lists [token]
+(defn parse-lists [list-node-fn token]
   (let [sections-of-text (map trim-n-crunch-whitespace (map #(.substring % 3) (:sections token)))]
-  [(ol (map li (map p sections-of-text)))]))
+    [(list-node-fn (map li (map p sections-of-text)))]))
+
+(def parse-ordered-lists (partial parse-lists ol))
+
+(def parse-unordered-lists (partial parse-lists ul))
 
 ;TODO refactor me
 (defn parse-verbatims [token]
@@ -42,6 +46,9 @@
 
 (defn ordered-list-token [text-blocks]
   (make-token text-blocks parse-ordered-lists))
+
+(defn unordered-list-token [text-blocks]
+  (make-token text-blocks parse-unordered-lists))
 
 (defn paragraph-token [text-blocks]
   (make-token text-blocks parse-paragraphs))

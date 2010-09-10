@@ -35,5 +35,8 @@
 (def ol
   (partial make-node :ol))
 
+(def ul
+  (partial make-node :ul))
+
 (def li
   (partial make-node :li))

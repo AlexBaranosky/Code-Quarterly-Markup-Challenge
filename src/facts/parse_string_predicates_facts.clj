@@ -16,6 +16,7 @@
 
 (fact (blockquote? "  blockquote!") => true)
 (fact (blockquote? "  #not a blockquote!") => false)
+(fact (blockquote? "  - unordered list") => false)
 (fact (blockquote? "not") => false)
 (fact (blockquote? " not") => false)
 (fact (blockquote? "   not") => false)
@@ -35,3 +36,7 @@
 (fact (ordered-list? "  #ordered list") => true)
 (fact (ordered-list? " #ordered list") => false)
 (fact (ordered-list? "   #ordered list") => false)
+
+(fact (unordered-list? "  - unordered list") => true)
+(fact (unordered-list? " - unordered list") => false)
+(fact (unordered-list? "   - unordered list") => false)
