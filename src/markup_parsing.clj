@@ -2,15 +2,15 @@
   (:use node)
   (:use token)
   (:use parse-string-predicates)
-  (:use common.utils)
   (:use common.string))
 
 (defn take-first-token [text-blocks]
   (cond
-    (heading? (first text-blocks))    (heading-token (take-while heading? text-blocks))
-    (blockquote? (first text-blocks)) (blockquote-token (take-while blockquote? text-blocks))
-    (verbatim? (first text-blocks))   (verbatim-token (take-while verbatim? text-blocks))
-    :else                             (paragraph-token (take-while paragraph? text-blocks))))
+    (heading? (first text-blocks))      (heading-token (take-while heading? text-blocks))
+    (blockquote? (first text-blocks))   (blockquote-token (take-while blockquote? text-blocks))
+    (ordered-list? (first text-blocks)) (ordered-list-token (take-while ordered-list? text-blocks))
+    (verbatim? (first text-blocks))     (verbatim-token (take-while verbatim? text-blocks))
+    :else                               (paragraph-token (take-while paragraph? text-blocks))))
 
 (defn remaining-text-blocks [text-blocks]
   (let [length-of-first (count (:sections (take-first-token text-blocks)))]

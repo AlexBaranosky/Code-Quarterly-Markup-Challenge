@@ -31,3 +31,9 @@
 
 (def pre
   (partial make-node :pre))
+
+(def ol
+  (partial make-node :ol))
+
+(def li
+  (partial make-node :li))

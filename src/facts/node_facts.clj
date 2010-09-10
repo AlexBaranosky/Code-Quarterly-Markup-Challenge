@@ -37,3 +37,9 @@
 
 (fact
   (pre ...children...) => (make-node :pre ...children...))
+
+(fact
+  (ol ...children...) => (make-node :ol ...children...))
+
+(fact
+  (li ...children...) => (make-node :li ...children...))

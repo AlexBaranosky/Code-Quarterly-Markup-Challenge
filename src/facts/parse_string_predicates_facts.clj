@@ -15,6 +15,7 @@
 (fact (heading? "Goat") => false)
 
 (fact (blockquote? "  blockquote!") => true)
+(fact (blockquote? "  #not a blockquote!") => false)
 (fact (blockquote? "not") => false)
 (fact (blockquote? " not") => false)
 (fact (blockquote? "   not") => false)
@@ -30,3 +31,7 @@
 (fact (verbatim? "  not") => false)
 (fact (verbatim? "    not") => true)
 (fact (verbatim? "     not") => true)
+
+(fact (ordered-list? "  #ordered list") => true)
+(fact (ordered-list? " #ordered list") => false)
+(fact (ordered-list? "   #ordered list") => false)
