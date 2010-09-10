@@ -15,3 +15,6 @@
 
 (defn re-count [rx s]
   (count (re-seq  rx s)))
+
+(defn matches? [rx s]
+  (> (re-count rx s) 0))

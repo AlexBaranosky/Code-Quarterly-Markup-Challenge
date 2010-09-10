@@ -9,13 +9,13 @@
   (> (heading-level-of s) 0))
 
 (defn blockquote? [s]
-  (= (re-count #"^  [^#\s]" s) 1))
+  (matches? #"^  [^#\s]" s))
 
 (defn verbatim? [s]
-  (= (re-count #"^   " s) 1))
+  (matches? #"^   " s))
 
 (defn ordered-list? [s]
-  (= (re-count #"^  #" s) 1))
+  (matches? #"^  #" s))
 
 (defn paragraph? [s]
   (not (or (heading? s) (blockquote? s) (verbatim? s))))
