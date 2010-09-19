@@ -9,7 +9,7 @@
     (cond
       (heading? block)      (heading-token (take-while heading? text-blocks))
       (blockquote? block)   (blockquote-token (take-while blockquote? text-blocks))
-      (ordered-list? block) (ordered-list-token (take-while ordered-list? text-blocks))
+      (ordered-list? block) (ordered-list-token (take-while still-ordered-list? text-blocks))
       (unordered-list? block) (unordered-list-token (take-while unordered-list? text-blocks))
       (verbatim? block)     (verbatim-token (take-while verbatim? text-blocks))
       :else                 (paragraph-token (take-while paragraph? text-blocks)))))

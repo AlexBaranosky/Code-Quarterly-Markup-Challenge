@@ -15,7 +15,11 @@
   (matches? #"^   " s))
 
 (defn ordered-list? [s]
-  (matches? #"^  #" s))
+  (matches? #"^  # " s))
+
+(defn still-ordered-list? [s]
+  (or (matches? #"^  # " s)
+    (matches? #"^    " s)))
 
 (defn unordered-list? [s]
   (matches? #"^  - " s))

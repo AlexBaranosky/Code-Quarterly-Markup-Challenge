@@ -33,9 +33,16 @@
 (fact (verbatim? "    not") => true)
 (fact (verbatim? "     not") => true)
 
-(fact (ordered-list? "  #ordered list") => true)
-(fact (ordered-list? " #ordered list") => false)
-(fact (ordered-list? "   #ordered list") => false)
+(fact (ordered-list? "  # ordered list") => true)
+(fact (ordered-list? " # ordered list") => false)
+(fact (ordered-list? "   # ordered list") => false)
+
+(fact (still-ordered-list? "  # ordered list") => true)
+(fact (still-ordered-list? "    ordered list") => true)
+(fact (still-ordered-list? " # ordered list") => false)
+(fact (still-ordered-list? "   ordered list") => false)
+(fact (still-ordered-list? "   # ordered list") => false)
+(fact (still-ordered-list? "     ordered list") => true)
 
 (fact (unordered-list? "  - unordered list") => true)
 (fact (unordered-list? " - unordered list") => false)

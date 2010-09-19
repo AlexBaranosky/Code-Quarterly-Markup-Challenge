@@ -2,6 +2,7 @@
   (:use parse-string-predicates)
   (:use node)
   (:use common.string)
+  (:use common.utils)
   (:use clojure.contrib.str-utils))
 
 (defn parse-heading [s]
@@ -18,9 +19,16 @@
 (defn parse-blockquotes [token]
   [(blockquote (parse-paragraphs token))])
 
-(defn parse-lists [list-node-fn token]
-  (let [sections-of-text (map trim-n-crunch-whitespace (map #(.substring % 3) (:sections token)))]
-    [(list-node-fn (map li (map p sections-of-text)))]))
+(defn list-item-sections [sections]
+  (partition-until-second #(or (ordered-list? %) (unordered-list? %)) sections))
+
+(defn clean-text [list-of-s]
+  (map trim-n-crunch-whitespace (map #(.substring % 3) list-of-s)))
+
+(defn parse-lists [ul-or-ol token]
+  (let [li-sections (list-item-sections (:sections token))
+        make-li #(li (map p %))]
+    [(ul-or-ol (map make-li (map clean-text li-sections)))]))
 
 (def parse-ordered-lists (partial parse-lists ol))
 

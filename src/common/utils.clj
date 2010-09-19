@@ -20,3 +20,18 @@
 
 (defn matches? [rx s]
   (> (re-count rx s) 0))
+
+(defn take-until-second [pred coll]
+  (cond
+    (empty? coll) []
+
+    (pred (first coll))
+    (cons (first coll) (take-while #(not (pred %)) (rest coll)))
+
+    :else
+    (cons (first coll) (take-until-second pred (rest coll)))))
+
+(defn partition-until-second [pred coll]
+  (let [matches (take-until-second pred coll)]
+    (if (empty? matches) []
+      (cons matches (partition-until-second pred (drop (count matches) coll))))))
