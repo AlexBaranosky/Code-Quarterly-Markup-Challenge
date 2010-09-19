@@ -1,8 +1,10 @@
 (ns common.utils
-  (:use [clojure.contrib.str-utils2 :only (split)]))
+  (:use [clojure.contrib.str-utils2 :only (split)])
+  (:import (java.io File)))
 
 (defn resource [f]
-  (str "C:\\Users\\Alex and Paula\\Documents\\Software Projects\\CodeChallengeMarkup\\resources\\" f))
+  (let [resource-path (.getCanonicalPath (File. "..\\..\\resources"))]
+    (str resource-path "\\" f)))
 
 (defn txt-resource [file-sans-extension]
   (resource (str file-sans-extension ".txt")))
@@ -14,7 +16,7 @@
   (partial map list))
 
 (defn re-count [rx s]
-  (count (re-seq  rx s)))
+  (count (re-seq rx s)))
 
 (defn matches? [rx s]
   (> (re-count rx s) 0))
