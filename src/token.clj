@@ -19,16 +19,13 @@
 (defn parse-blockquotes [token]
   [(blockquote (parse-paragraphs token))])
 
-(defn list-item-sections [sections]
-  (partition-until-second #(or (ordered-list? %) (unordered-list? %)) sections))
-
-(defn clean-text [list-of-s]
+(defn clean-li-text [list-of-s]
   (map trim-n-crunch-whitespace (map #(.substring % 3) list-of-s)))
 
 (defn parse-lists [ul-or-ol token]
-  (let [li-sections (list-item-sections (:sections token))
+  (let [li-sections (partition-until-second #(or (ordered-list? %) (unordered-list? %)) (:sections token))
         make-li #(li (map p %))]
-    [(ul-or-ol (map make-li (map clean-text li-sections)))]))
+    [(ul-or-ol (map make-li (map clean-li-text li-sections)))]))
 
 (def parse-ordered-lists (partial parse-lists ol))
 

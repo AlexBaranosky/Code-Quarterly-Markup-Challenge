@@ -39,5 +39,6 @@
 
 (fact (trim-3-rx "   hello\n   world") => "hello\nworld")
 (fact (trim-3-rx "    hello\n    world") => " hello\n world")
+(fact (trim-3-rx "    hello\n    world\n   !!!") => " hello\n world\n!!!")
 
 
