@@ -4,12 +4,6 @@
   (:use node)
   (:use midje.sweet))
 
-;(fact (take-first-token []) => empty-token)
-;(fact (remaining-text-blocks []) => [])
-
-;(fact (take-first-token [""]) => empty-token)
-;(fact (remaining-text-blocks [""]) => [""])    ;this is a bit weird, but all acceptance tests pass...
-
 (fact (take-first-token ["paragraph"]) => (paragraph-token ["paragraph"]))
 (fact (remaining-text-blocks ["paragraph"]) => [])
 (fact (remaining-text-blocks ["paragraph" "paragraph" "paragraph"]) => [])
@@ -33,32 +27,31 @@
   =>
   [(heading-token ["* heading1", "* heading2"])])
 
-;(fact (tokenize [""]) => [] ) ; not a valid state really
 (fact (tokenize ["paragraph"]) => [(paragraph-token ["paragraph"])] )
 
 (fact (parse-tokens [(paragraph-token ["paragraph"])]) => [(p "paragraph")])
 
-;;;;"01_empty"
+;"01_empty"
 (fact (parse "") => (body []))
-;;
-;;;other
+
+;other
 (fact (parse "hi") => (body (p "hi")))
-;;
-;;
-;;02_simple_paragraph
+
+
+;02_simple_paragraph
 (fact (parse "This is a simple paragraph.") => (body (p "This is a simple paragraph.")))
-;
-;;04_two_paragraphs
+
+;04_two_paragraphs
 (fact (parse "This is paragraph number one.
 
 This is paragraph number two.")
   =>
   (body [(p "This is paragraph number one.") (p "This is paragraph number two.")]))
 
-;;06_header
+;06_header
 (fact (parse "* This is a top level header") => (body (h1 "This is a top level header")))
-;
-;;07_headers
+
+;07_headers
 (fact (parse "* This is a primary header.
 
 ** This is a secondary header.
